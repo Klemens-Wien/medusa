@@ -1,4 +1,4 @@
-# Serena – Wellness & Massage Storefront
+# Vermont – Wellness & Massage Storefront
 
 A modern, dependency-free storefront for a wellness and massage shop (massage oils, massage devices, aromatherapy, spa-at-home). The UI is in German and it runs on any static file server.
 
@@ -10,7 +10,7 @@ It works in two modes:
 ## Run it
 
 ```bash
-cd examples/wellness-shop
+cd examples/vermont-shop
 python3 -m http.server 5173   # or: npx serve -l 5173
 ```
 

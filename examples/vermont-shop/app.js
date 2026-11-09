@@ -94,14 +94,14 @@
     },
 
     async cartId() {
-      let id = store.get("serena-medusa-cart", null)
+      let id = store.get("vermont-medusa-cart", null)
       if (!id) {
         const { cart } = await this.request("/store/carts", {
           method: "POST",
           body: { region_id: await this.region() },
         })
         id = cart.id
-        store.set("serena-medusa-cart", id)
+        store.set("vermont-medusa-cart", id)
       }
       return id
     },
@@ -133,8 +133,8 @@
     products: [],
     filter: "Alle",
     query: "",
-    cart: store.get("serena-cart", []), // [{ productId, variantId, qty }]
-    wishlist: new Set(store.get("serena-wishlist", [])),
+    cart: store.get("vermont-cart", []), // [{ productId, variantId, qty }]
+    wishlist: new Set(store.get("vermont-wishlist", [])),
   }
 
   const findProduct = (id) => state.products.find((p) => p.id === id)
@@ -270,7 +270,7 @@
           .join("")
       : `<li class="cart-empty">${ART.stones("#9dbb9e")}<p>Dein Warenkorb ist noch leer.<br/>Gönn dir eine kleine Auszeit.</p></li>`
 
-    store.set("serena-cart", state.cart)
+    store.set("vermont-cart", state.cart)
   }
 
   function changeQty(productId, variantId, delta) {
@@ -664,13 +664,13 @@
   }
 
   function setupTheme() {
-    const saved = store.get("serena-theme", null)
+    const saved = store.get("vermont-theme", null)
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches
     document.documentElement.dataset.theme = saved || (prefersDark ? "dark" : "light")
     $("#themeToggle").addEventListener("click", () => {
       const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark"
       document.documentElement.dataset.theme = next
-      store.set("serena-theme", next)
+      store.set("vermont-theme", next)
     })
   }
 
@@ -716,7 +716,7 @@
         on ? state.wishlist.add(p.id) : state.wishlist.delete(p.id)
         btn.classList.toggle("on", on)
         btn.setAttribute("aria-pressed", String(on))
-        store.set("serena-wishlist", [...state.wishlist])
+        store.set("vermont-wishlist", [...state.wishlist])
         toast(on ? "Zur Wunschliste hinzugefügt." : "Von der Wunschliste entfernt.")
       } else if (e.target.closest("[data-quick]")) {
         openQuickView(p)
