@@ -98,7 +98,7 @@ export default async function seedWellness({ container }: ExecArgs) {
       input: {
         selector: { id: store.id },
         update: {
-          name: "Aura Wellness",
+          name: "Vermont Wellness",
           supported_currencies: [{ currency_code: "eur", is_default: true }],
           default_sales_channel_id: salesChannel.id,
         },

@@ -42,8 +42,8 @@ type CartContextValue = {
 
 const CartContext = createContext<CartContextValue | null>(null)
 
-const LOCAL_KEY = "aura-cart"
-const CART_ID_KEY = "aura-cart-id"
+const LOCAL_KEY = "vermont-cart"
+const CART_ID_KEY = "vermont-cart-id"
 const CART_FIELDS = "*items,*items.variant,*items.product"
 
 function readStorage(key: string) {

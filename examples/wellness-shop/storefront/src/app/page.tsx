@@ -172,7 +172,7 @@ export default async function HomePage() {
       <section className="section">
         <div className="container">
           <Reveal>
-            <span className="eyebrow">Warum aura.</span>
+            <span className="eyebrow">Warum Vermont</span>
             <h2 className="section-title">Selfcare ohne Kompromisse</h2>
           </Reveal>
           <div className="usp-grid">
@@ -205,7 +205,7 @@ function Footer() {
     <footer className="footer">
       <div className="container">
         <div className="logo" style={{ color: "var(--text)" }}>
-          aura<span>.</span>
+          Vermont<span>.</span>
         </div>
         <p style={{ marginTop: 8 }}>Wellness, das man fühlt. Made with love in Wien.</p>
         <div className="footer-grid">
@@ -244,7 +244,7 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <p style={{ marginTop: 30, fontSize: 12 }}>© {new Date().getFullYear()} aura. Alle Preise inkl. MwSt.</p>
+        <p style={{ marginTop: 30, fontSize: 12 }}>© {new Date().getFullYear()} Vermont. Alle Preise inkl. MwSt.</p>
       </div>
     </footer>
   )

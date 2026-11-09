@@ -22,8 +22,8 @@ export function Header() {
 
   return (
     <header className="header glass">
-      <Link href="/" className="logo" aria-label="Aura Startseite">
-        aura<span>.</span>
+      <Link href="/" className="logo" aria-label="Vermont Startseite">
+        Vermont<span>.</span>
       </Link>
       <nav className="header-nav" aria-label="Hauptnavigation">
         <Link href="/#shop">Shop</Link>

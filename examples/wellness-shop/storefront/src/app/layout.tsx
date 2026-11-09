@@ -8,7 +8,7 @@ import { Header } from "@/components/Header"
 import { getRegionId } from "@/lib/data"
 
 export const metadata: Metadata = {
-  title: { default: "aura. Wellness & Massage", template: "%s | aura." },
+  title: { default: "Vermont | Wellness & Massage", template: "%s | Vermont" },
   description:
     "Massagepistolen, Gua Sha, Aromaöle und Yoga-Essentials für dein tägliches Wellness-Ritual. Gratisversand ab 49 €.",
 }

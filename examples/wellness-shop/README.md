@@ -1,4 +1,4 @@
-# aura. Wellness-Shop (Medusa + Next.js)
+# Vermont Wellness-Shop (Medusa + Next.js)
 
 Ein Onlineshop für Wellness- und Massageprodukte, der zuerst für das Handy gestaltet ist. Er besteht aus zwei Teilen:
 
@@ -32,22 +32,22 @@ Ohne Backend-Konfiguration zeigt die Storefront die Produkte aus `data/products.
 1. Eine Medusa-App anlegen (benötigt PostgreSQL):
 
    ```bash
-   npx create-medusa-app@latest aura-backend
+   npx create-medusa-app@latest vermont-backend
    ```
 
 2. Seed-Skript und Produktdaten in die App kopieren:
 
    ```bash
-   cp examples/wellness-shop/backend/src/scripts/seed-wellness.ts aura-backend/src/scripts/
-   cp examples/wellness-shop/data/products.json aura-backend/src/scripts/wellness-products.json
+   cp examples/wellness-shop/backend/src/scripts/seed-wellness.ts vermont-backend/src/scripts/
+   cp examples/wellness-shop/data/products.json vermont-backend/src/scripts/wellness-products.json
    ```
 
-3. In `aura-backend/.env` die Storefront für CORS erlauben: `STORE_CORS=http://localhost:8000`
+3. In `vermont-backend/.env` die Storefront für CORS erlauben: `STORE_CORS=http://localhost:8000`
 
 4. Seed ausführen und Backend starten:
 
    ```bash
-   cd aura-backend
+   cd vermont-backend
    npx medusa exec ./src/scripts/seed-wellness.ts
    npm run dev
    ```
