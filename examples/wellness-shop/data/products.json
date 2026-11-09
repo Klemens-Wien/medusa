@@ -1,0 +1,227 @@
+{
+  "categories": [
+    { "handle": "massage", "name": "Massage" },
+    { "handle": "gesicht", "name": "Gesicht & Beauty" },
+    { "handle": "aroma", "name": "Aroma & Öle" },
+    { "handle": "yoga", "name": "Yoga & Recovery" }
+  ],
+  "products": [
+    {
+      "handle": "massagepistole-pulse-pro",
+      "title": "Massagepistole Pulse Pro",
+      "subtitle": "Tiefenmassage in 6 Stufen",
+      "description": "Kraftvolle Perkussionsmassage für verspannte Muskeln nach dem Training oder einem langen Bürotag. Flüsterleiser Motor, 6 Intensitätsstufen, 5 Aufsätze und bis zu 6 Stunden Akkulaufzeit. Kommt im Travel-Case.",
+      "category": "massage",
+      "badge": "Bestseller",
+      "price": 129,
+      "compare_at_price": 159,
+      "option": { "title": "Farbe", "values": ["Midnight", "Sand"] },
+      "images": [
+        "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b",
+        "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b"
+      ],
+      "reviews": [
+        { "name": "Lena K.", "rating": 5, "title": "Gamechanger nach dem Gym", "text": "Leise, stark und der Akku hält ewig. Mein Nacken dankt es mir jeden Abend." },
+        { "name": "Jonas M.", "rating": 5, "title": "Besser als erwartet", "text": "Die Stufen 1 bis 3 reichen völlig, Stufe 6 ist richtig intensiv. Top Verarbeitung." },
+        { "name": "Aylin S.", "rating": 4, "title": "Sehr gut", "text": "Würde mir noch einen weicheren Aufsatz wünschen, sonst perfekt." }
+      ]
+    },
+    {
+      "handle": "nackenmassagegeraet-shiatsu",
+      "title": "Nackenmassagegerät Shiatsu Wrap",
+      "subtitle": "Mit Wärmefunktion",
+      "description": "Acht rotierende Shiatsu-Knoten und sanfte Infrarotwärme lösen Verspannungen in Nacken und Schultern. Kabellos, mit Handschlaufen für den perfekten Druck. Ideal für Homeoffice und Couch.",
+      "category": "massage",
+      "badge": "Viral",
+      "price": 79.9,
+      "compare_at_price": 99.9,
+      "option": { "title": "Farbe", "values": ["Grau", "Rosé"] },
+      "images": [
+        "https://images.unsplash.com/photo-1519823551278-64ac92734fb1",
+        "https://images.unsplash.com/photo-1544161515-4ab6ce6db874"
+      ],
+      "reviews": [
+        { "name": "Sarah W.", "rating": 5, "title": "Wie beim Masseur", "text": "Die Wärme ist herrlich. Benutze es jeden Abend 15 Minuten auf dem Sofa." },
+        { "name": "Tim B.", "rating": 4, "title": "Angenehm", "text": "Sehr entspannend, die Knoten könnten etwas tiefer gehen." },
+        { "name": "Nina R.", "rating": 5, "title": "Perfektes Geschenk", "text": "Für meine Mama gekauft, sie will es nicht mehr hergeben." }
+      ]
+    },
+    {
+      "handle": "gua-sha-stein-rosenquarz",
+      "title": "Gua-Sha-Stein Rosenquarz",
+      "subtitle": "Echter Rosenquarz, handpoliert",
+      "description": "Der Klassiker für dein Morgenritual: Der kühle Rosenquarz regt die Mikrozirkulation an, fördert den Lymphfluss und lässt die Haut frischer wirken. Perfekt in Kombination mit einem Gesichtsöl.",
+      "category": "gesicht",
+      "badge": "Trend",
+      "price": 24.9,
+      "option": { "title": "Stein", "values": ["Rosenquarz", "Jade"] },
+      "images": [
+        "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881",
+        "https://images.unsplash.com/photo-1556228578-8c89e6adf883"
+      ],
+      "reviews": [
+        { "name": "Mia L.", "rating": 5, "title": "Wunderschön", "text": "Fühlt sich hochwertig an und mein Gesicht ist morgens viel weniger geschwollen." },
+        { "name": "Clara F.", "rating": 5, "title": "Liebe es", "text": "Lege ihn vorher in den Kühlschrank, ein echtes Spa-Gefühl." },
+        { "name": "Elif D.", "rating": 4, "title": "Toll", "text": "Schöne Form, die Kanten passen super an Kiefer und Wangen." }
+      ]
+    },
+    {
+      "handle": "jade-roller-duo",
+      "title": "Jade Roller Duo",
+      "subtitle": "Kühlende Gesichtsmassage",
+      "description": "Doppelseitiger Roller mit großem Stein für Wangen und Stirn und kleinem Stein für die Augenpartie. Geräuschlose Rolle aus Edelstahl, damit nichts quietscht.",
+      "category": "gesicht",
+      "price": 29.9,
+      "option": { "title": "Stein", "values": ["Jade"] },
+      "images": [
+        "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9",
+        "https://images.unsplash.com/photo-1620916566398-39f1143ab7be"
+      ],
+      "reviews": [
+        { "name": "Hannah P.", "rating": 5, "title": "Must-have", "text": "Nach dem Serum rollen und die Haut glänzt. Liebe es." },
+        { "name": "Sophie G.", "rating": 4, "title": "Schön kühl", "text": "Gute Qualität, die kleine Rolle ist perfekt unter den Augen." }
+      ]
+    },
+    {
+      "handle": "aromaoel-lavendel-calm",
+      "title": "Aromaöl Lavendel Calm",
+      "subtitle": "100 % ätherisches Bio-Öl",
+      "description": "Reines Lavendelöl aus der Provence für den Diffuser, ein warmes Bad oder ein paar Tropfen auf dem Kopfkissen. Beruhigt, entspannt und hilft beim Runterkommen. 10 ml mit Tropfeinsatz.",
+      "category": "aroma",
+      "price": 19.9,
+      "option": { "title": "Duft", "values": ["Lavendel", "Eukalyptus", "Orange"] },
+      "images": [
+        "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108",
+        "https://images.unsplash.com/photo-1600857062241-98e5dba7f214"
+      ],
+      "reviews": [
+        { "name": "Julia H.", "rating": 5, "title": "Riecht himmlisch", "text": "Endlich ein Lavendelöl, das nicht künstlich riecht. Schlafe viel besser." },
+        { "name": "Marco T.", "rating": 5, "title": "Top", "text": "Eukalyptus ist mein Favorit für die Sauna. Sehr ergiebig." },
+        { "name": "Laura N.", "rating": 4, "title": "Gut", "text": "Schöner Duft, Flasche ist wertig." }
+      ]
+    },
+    {
+      "handle": "aroma-diffuser-cloud",
+      "title": "Aroma-Diffuser Cloud",
+      "subtitle": "Ultraschall mit Moodlight",
+      "description": "Leiser Ultraschall-Diffuser mit 300 ml Tank, sieben Lichtfarben und Timer. Verteilt deine Lieblingsöle als feinen Nebel und taucht den Raum in sanftes Licht.",
+      "category": "aroma",
+      "badge": "Neu",
+      "price": 49.9,
+      "option": { "title": "Farbe", "values": ["Weiß", "Holz"] },
+      "images": [
+        "https://images.unsplash.com/photo-1602928321679-560bb453f190",
+        "https://images.unsplash.com/photo-1515377905703-c4788e51af15"
+      ],
+      "reviews": [
+        { "name": "Anna B.", "rating": 5, "title": "So gemütlich", "text": "Das Licht ist wunderschön und er ist wirklich flüsterleise." },
+        { "name": "David K.", "rating": 4, "title": "Empfehlung", "text": "Läuft die ganze Nacht durch, Abschaltautomatik funktioniert." }
+      ]
+    },
+    {
+      "handle": "yogamatte-kork-flow",
+      "title": "Yogamatte Kork Flow",
+      "subtitle": "Rutschfest, 4 mm, nachhaltig",
+      "description": "Natürlicher Kork auf Naturkautschuk: Je mehr du schwitzt, desto griffiger wird die Oberfläche. Antibakteriell, geruchsneutral und mit Tragegurt.",
+      "category": "yoga",
+      "price": 69.9,
+      "compare_at_price": 84.9,
+      "option": { "title": "Farbe", "values": ["Kork Natur", "Kork Lavendel"] },
+      "images": [
+        "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f",
+        "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b"
+      ],
+      "reviews": [
+        { "name": "Katharina E.", "rating": 5, "title": "Beste Matte ever", "text": "Kein Rutschen mehr beim Hot Yoga. Und sie sieht mega aus." },
+        { "name": "Felix R.", "rating": 5, "title": "Super Grip", "text": "Am Anfang leicht nach Kork riechend, nach zwei Tagen weg." },
+        { "name": "Lisa M.", "rating": 4, "title": "Schön", "text": "Etwas schwerer als meine alte Matte, dafür extrem stabil." }
+      ]
+    },
+    {
+      "handle": "faszienrolle-recover",
+      "title": "Faszienrolle Recover",
+      "subtitle": "Mittelhart mit 3D-Struktur",
+      "description": "Die Faszienrolle für Beine, Rücken und Waden. Die 3D-Oberfläche imitiert die Hände eines Masseurs, der EVA-Kern ist formstabil und federleicht.",
+      "category": "yoga",
+      "price": 34.9,
+      "option": { "title": "Härte", "values": ["Mittel", "Hart"] },
+      "images": [
+        "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0",
+        "https://images.unsplash.com/photo-1518611012118-696072aa579a"
+      ],
+      "reviews": [
+        { "name": "Max O.", "rating": 5, "title": "Pflicht für Läufer", "text": "Nach langen Läufen rolle ich die Waden aus, macht einen riesigen Unterschied." },
+        { "name": "Sina V.", "rating": 4, "title": "Gut", "text": "Mittel ist für Einsteiger perfekt." }
+      ]
+    },
+    {
+      "handle": "massageball-set-trio",
+      "title": "Massageball-Set Trio",
+      "subtitle": "Für Triggerpunkte und Fußsohlen",
+      "description": "Drei Bälle in unterschiedlichen Härten und Größen für Schultern, Nacken und Fußsohlen. Passt in jede Sporttasche und löst Triggerpunkte gezielt.",
+      "category": "massage",
+      "price": 19.9,
+      "option": { "title": "Set", "values": ["Trio"] },
+      "images": [
+        "https://images.unsplash.com/photo-1600881333168-2ef49b341f30",
+        "https://images.unsplash.com/photo-1540555700478-4be289fbecef"
+      ],
+      "reviews": [
+        { "name": "Paul S.", "rating": 5, "title": "Klein aber oho", "text": "Der Igelball unter dem Schreibtisch ist mein bester Freund." },
+        { "name": "Emma J.", "rating": 4, "title": "Praktisch", "text": "Gutes Set für den Preis." }
+      ]
+    },
+    {
+      "handle": "hot-stone-set-basalt",
+      "title": "Hot-Stone-Set Basalt",
+      "subtitle": "12 Steine für Spa-Momente zu Hause",
+      "description": "Handgeschliffene Basaltsteine speichern Wärme besonders lange. Erwärmt im Wasserbad sorgen sie für tiefe Entspannung bei der Partnermassage. Inklusive Baumwollbeutel und Anleitung.",
+      "category": "massage",
+      "price": 44.9,
+      "option": { "title": "Set", "values": ["12 Steine"] },
+      "images": [
+        "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2",
+        "https://images.unsplash.com/photo-1544161515-4ab6ce6db874"
+      ],
+      "reviews": [
+        { "name": "Theresa A.", "rating": 5, "title": "Wie im Day Spa", "text": "Mit dem Mandelöl zusammen einfach traumhaft." },
+        { "name": "Lukas W.", "rating": 5, "title": "Schöne Steine", "text": "Gut verarbeitet und die Anleitung ist hilfreich." }
+      ]
+    },
+    {
+      "handle": "massageoel-mandel-arnika",
+      "title": "Massageöl Mandel & Arnika",
+      "subtitle": "Wärmend, vegan, 100 ml",
+      "description": "Seidiges Körperöl aus kaltgepresstem Mandelöl und Arnikaextrakt. Zieht schnell ein, pflegt die Haut und macht jede Massage geschmeidig. Ohne Mineralöle.",
+      "category": "aroma",
+      "price": 22.9,
+      "option": { "title": "Größe", "values": ["100 ml", "250 ml"] },
+      "images": [
+        "https://images.unsplash.com/photo-1556228720-195a672e8a03",
+        "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108"
+      ],
+      "reviews": [
+        { "name": "Miriam C.", "rating": 5, "title": "Riecht so gut", "text": "Klebt nicht und die Haut ist danach super weich." },
+        { "name": "Ben L.", "rating": 4, "title": "Gutes Öl", "text": "Nach dem Sport eine Wohltat für die Beine." }
+      ]
+    },
+    {
+      "handle": "akupressurmatte-lotus",
+      "title": "Akupressurmatte Lotus",
+      "subtitle": "Mit Nackenkissen",
+      "description": "Über 6.000 Akupressurpunkte aktivieren die Durchblutung und schenken dir nach wenigen Minuten ein warmes, entspanntes Körpergefühl. Bezug aus Bio-Baumwolle, Füllung aus Kokosfaser.",
+      "category": "yoga",
+      "price": 39.9,
+      "option": { "title": "Farbe", "values": ["Lila", "Mint"] },
+      "images": [
+        "https://images.unsplash.com/photo-1506126613408-eca07ce68773",
+        "https://images.unsplash.com/photo-1545205597-3d9d02c29597"
+      ],
+      "reviews": [
+        { "name": "Vanessa I.", "rating": 5, "title": "Erst autsch, dann wow", "text": "Die ersten zwei Minuten sind intensiv, danach pure Entspannung." },
+        { "name": "Oliver Z.", "rating": 4, "title": "Hilft beim Einschlafen", "text": "Liege jeden Abend 20 Minuten darauf, schlafe merklich besser." },
+        { "name": "Leonie U.", "rating": 5, "title": "Liebe sie", "text": "Farbe Mint ist wunderschön." }
+      ]
+    }
+  ]
+}
