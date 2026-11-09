@@ -19,7 +19,16 @@ Ein Onlineshop für Wellness- und Massageprodukte, der zuerst für das Handy ges
 
 ## Vorschau als einzelne HTML-Datei
 
-`preview/vermont-shop.html` ist der Shop als eine einzige Datei. Sie lässt sich ohne Server direkt im Browser öffnen, mit Demo-Daten und einem Warenkorb im Browser. Nach Änderungen an `data/products.json` oder am Design neu erzeugen:
+`preview/vermont-shop.html` ist der komplette Shop als eine einzige Datei. Sie läuft ohne Server direkt im Browser und braucht kein Backend. Warenkorb, Merkliste und Bewertungen speichert sie im Browser.
+
+- 18 Produkte mit eingebauten Produktgrafiken (SVG). Sie laden sofort, auch offline, und färben sich je nach gewählter Variante um.
+- Startseite mit animiertem Hero, Instagram-artigen Stories, Kategorie-Kacheln, Bestseller-Karussell, Set-Angebot, Ritual-Finder (Quiz), Bewertungen, Instagram-Raster, FAQ und Newsletter.
+- Shop mit Kategorien, Sortierung und Angebotsfilter, Live-Suche, Merkliste und Schnellansicht.
+- Produktseite mit Galerie, Tipp-Zoom, Farbauswahl, Mengenwahl, Lieferzeit, „Oft zusammen gekauft“, Bewertungsfilter, eigener Bewertung und „Zuletzt angesehen“.
+- Warenkorb mit Gratisversand-Balken, Set-Rabatt, Rabattcodes (`VERMONT10`, `BLACK15` bis 30.11.2026) und Empfehlung. Checkout in drei Schritten als Demo, ohne echte Zahlung.
+- App-artige Leiste unten auf dem Handy, Menü und Hinweise.
+
+Der Quellcode liegt in `preview/src/` (`styles.css`, `art.js` für die Produktgrafiken, `app.js`). Nach Änderungen dort oder an `data/products.json` neu erzeugen:
 
 ```bash
 node preview/build-preview.mjs

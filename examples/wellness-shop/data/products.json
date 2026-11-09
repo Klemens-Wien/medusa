@@ -1,9 +1,25 @@
 {
   "categories": [
-    { "handle": "massage", "name": "Massage" },
-    { "handle": "gesicht", "name": "Gesicht & Beauty" },
-    { "handle": "aroma", "name": "Aroma & Öle" },
-    { "handle": "yoga", "name": "Yoga & Recovery" }
+    {
+      "handle": "massage",
+      "name": "Massage"
+    },
+    {
+      "handle": "gesicht",
+      "name": "Gesicht & Beauty"
+    },
+    {
+      "handle": "aroma",
+      "name": "Aroma & Öle"
+    },
+    {
+      "handle": "yoga",
+      "name": "Yoga & Recovery"
+    },
+    {
+      "handle": "schlaf",
+      "name": "Schlaf & Ruhe"
+    }
   ],
   "products": [
     {
@@ -15,16 +31,48 @@
       "badge": "Bestseller",
       "price": 129,
       "compare_at_price": 159,
-      "option": { "title": "Farbe", "values": ["Midnight", "Sand"] },
+      "option": {
+        "title": "Farbe",
+        "values": [
+          "Midnight",
+          "Sand"
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b",
         "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b"
       ],
       "reviews": [
-        { "name": "Lena K.", "rating": 5, "title": "Gamechanger nach dem Gym", "text": "Leise, stark und der Akku hält ewig. Mein Nacken dankt es mir jeden Abend." },
-        { "name": "Jonas M.", "rating": 5, "title": "Besser als erwartet", "text": "Die Stufen 1 bis 3 reichen völlig, Stufe 6 ist richtig intensiv. Top Verarbeitung." },
-        { "name": "Aylin S.", "rating": 4, "title": "Sehr gut", "text": "Würde mir noch einen weicheren Aufsatz wünschen, sonst perfekt." }
-      ]
+        {
+          "name": "Lena K.",
+          "rating": 5,
+          "title": "Gamechanger nach dem Gym",
+          "text": "Leise, stark und der Akku hält ewig. Mein Nacken dankt es mir jeden Abend."
+        },
+        {
+          "name": "Jonas M.",
+          "rating": 5,
+          "title": "Besser als erwartet",
+          "text": "Die Stufen 1 bis 3 reichen völlig, Stufe 6 ist richtig intensiv. Top Verarbeitung."
+        },
+        {
+          "name": "Aylin S.",
+          "rating": 4,
+          "title": "Sehr gut",
+          "text": "Würde mir noch einen weicheren Aufsatz wünschen, sonst perfekt."
+        }
+      ],
+      "art": "massage-gun",
+      "swatches": {
+        "Midnight": "#2b2540",
+        "Sand": "#d9c3a5"
+      },
+      "benefits": [
+        "6 Intensitätsstufen",
+        "5 Aufsätze inklusive",
+        "Bis 6 h Akku"
+      ],
+      "popularity": 98
     },
     {
       "handle": "nackenmassagegeraet-shiatsu",
@@ -35,16 +83,48 @@
       "badge": "Viral",
       "price": 79.9,
       "compare_at_price": 99.9,
-      "option": { "title": "Farbe", "values": ["Grau", "Rosé"] },
+      "option": {
+        "title": "Farbe",
+        "values": [
+          "Grau",
+          "Rosé"
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1519823551278-64ac92734fb1",
         "https://images.unsplash.com/photo-1544161515-4ab6ce6db874"
       ],
       "reviews": [
-        { "name": "Sarah W.", "rating": 5, "title": "Wie beim Masseur", "text": "Die Wärme ist herrlich. Benutze es jeden Abend 15 Minuten auf dem Sofa." },
-        { "name": "Tim B.", "rating": 4, "title": "Angenehm", "text": "Sehr entspannend, die Knoten könnten etwas tiefer gehen." },
-        { "name": "Nina R.", "rating": 5, "title": "Perfektes Geschenk", "text": "Für meine Mama gekauft, sie will es nicht mehr hergeben." }
-      ]
+        {
+          "name": "Sarah W.",
+          "rating": 5,
+          "title": "Wie beim Masseur",
+          "text": "Die Wärme ist herrlich. Benutze es jeden Abend 15 Minuten auf dem Sofa."
+        },
+        {
+          "name": "Tim B.",
+          "rating": 4,
+          "title": "Angenehm",
+          "text": "Sehr entspannend, die Knoten könnten etwas tiefer gehen."
+        },
+        {
+          "name": "Nina R.",
+          "rating": 5,
+          "title": "Perfektes Geschenk",
+          "text": "Für meine Mama gekauft, sie will es nicht mehr hergeben."
+        }
+      ],
+      "art": "neck",
+      "swatches": {
+        "Grau": "#8f8a99",
+        "Rosé": "#e7b4b8"
+      },
+      "benefits": [
+        "8 Shiatsu-Knoten",
+        "Infrarot-Wärme",
+        "Kabellos"
+      ],
+      "popularity": 95
     },
     {
       "handle": "gua-sha-stein-rosenquarz",
@@ -54,16 +134,48 @@
       "category": "gesicht",
       "badge": "Trend",
       "price": 24.9,
-      "option": { "title": "Stein", "values": ["Rosenquarz", "Jade"] },
+      "option": {
+        "title": "Stein",
+        "values": [
+          "Rosenquarz",
+          "Jade"
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881",
         "https://images.unsplash.com/photo-1556228578-8c89e6adf883"
       ],
       "reviews": [
-        { "name": "Mia L.", "rating": 5, "title": "Wunderschön", "text": "Fühlt sich hochwertig an und mein Gesicht ist morgens viel weniger geschwollen." },
-        { "name": "Clara F.", "rating": 5, "title": "Liebe es", "text": "Lege ihn vorher in den Kühlschrank, ein echtes Spa-Gefühl." },
-        { "name": "Elif D.", "rating": 4, "title": "Toll", "text": "Schöne Form, die Kanten passen super an Kiefer und Wangen." }
-      ]
+        {
+          "name": "Mia L.",
+          "rating": 5,
+          "title": "Wunderschön",
+          "text": "Fühlt sich hochwertig an und mein Gesicht ist morgens viel weniger geschwollen."
+        },
+        {
+          "name": "Clara F.",
+          "rating": 5,
+          "title": "Liebe es",
+          "text": "Lege ihn vorher in den Kühlschrank, ein echtes Spa-Gefühl."
+        },
+        {
+          "name": "Elif D.",
+          "rating": 4,
+          "title": "Toll",
+          "text": "Schöne Form, die Kanten passen super an Kiefer und Wangen."
+        }
+      ],
+      "art": "guasha",
+      "swatches": {
+        "Rosenquarz": "#f2b8c6",
+        "Jade": "#7fc8a9"
+      },
+      "benefits": [
+        "Echter Edelstein",
+        "Handpoliert",
+        "Mit Pflegebeutel"
+      ],
+      "popularity": 90
     },
     {
       "handle": "jade-roller-duo",
@@ -72,15 +184,40 @@
       "description": "Doppelseitiger Roller mit großem Stein für Wangen und Stirn und kleinem Stein für die Augenpartie. Geräuschlose Rolle aus Edelstahl, damit nichts quietscht.",
       "category": "gesicht",
       "price": 29.9,
-      "option": { "title": "Stein", "values": ["Jade"] },
+      "option": {
+        "title": "Stein",
+        "values": [
+          "Jade"
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9",
         "https://images.unsplash.com/photo-1620916566398-39f1143ab7be"
       ],
       "reviews": [
-        { "name": "Hannah P.", "rating": 5, "title": "Must-have", "text": "Nach dem Serum rollen und die Haut glänzt. Liebe es." },
-        { "name": "Sophie G.", "rating": 4, "title": "Schön kühl", "text": "Gute Qualität, die kleine Rolle ist perfekt unter den Augen." }
-      ]
+        {
+          "name": "Hannah P.",
+          "rating": 5,
+          "title": "Must-have",
+          "text": "Nach dem Serum rollen und die Haut glänzt. Liebe es."
+        },
+        {
+          "name": "Sophie G.",
+          "rating": 4,
+          "title": "Schön kühl",
+          "text": "Gute Qualität, die kleine Rolle ist perfekt unter den Augen."
+        }
+      ],
+      "art": "roller",
+      "swatches": {
+        "Jade": "#7fc8a9"
+      },
+      "benefits": [
+        "Doppelseitig",
+        "Geräuschlose Rolle",
+        "Kühlend"
+      ],
+      "popularity": 72
     },
     {
       "handle": "aromaoel-lavendel-calm",
@@ -89,16 +226,50 @@
       "description": "Reines Lavendelöl aus der Provence für den Diffuser, ein warmes Bad oder ein paar Tropfen auf dem Kopfkissen. Beruhigt, entspannt und hilft beim Runterkommen. 10 ml mit Tropfeinsatz.",
       "category": "aroma",
       "price": 19.9,
-      "option": { "title": "Duft", "values": ["Lavendel", "Eukalyptus", "Orange"] },
+      "option": {
+        "title": "Duft",
+        "values": [
+          "Lavendel",
+          "Eukalyptus",
+          "Orange"
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108",
         "https://images.unsplash.com/photo-1600857062241-98e5dba7f214"
       ],
       "reviews": [
-        { "name": "Julia H.", "rating": 5, "title": "Riecht himmlisch", "text": "Endlich ein Lavendelöl, das nicht künstlich riecht. Schlafe viel besser." },
-        { "name": "Marco T.", "rating": 5, "title": "Top", "text": "Eukalyptus ist mein Favorit für die Sauna. Sehr ergiebig." },
-        { "name": "Laura N.", "rating": 4, "title": "Gut", "text": "Schöner Duft, Flasche ist wertig." }
-      ]
+        {
+          "name": "Julia H.",
+          "rating": 5,
+          "title": "Riecht himmlisch",
+          "text": "Endlich ein Lavendelöl, das nicht künstlich riecht. Schlafe viel besser."
+        },
+        {
+          "name": "Marco T.",
+          "rating": 5,
+          "title": "Top",
+          "text": "Eukalyptus ist mein Favorit für die Sauna. Sehr ergiebig."
+        },
+        {
+          "name": "Laura N.",
+          "rating": 4,
+          "title": "Gut",
+          "text": "Schöner Duft, Flasche ist wertig."
+        }
+      ],
+      "art": "dropper",
+      "swatches": {
+        "Lavendel": "#a68bd8",
+        "Eukalyptus": "#6fbf9f",
+        "Orange": "#f2a24b"
+      },
+      "benefits": [
+        "100 % naturrein",
+        "Bio-zertifiziert",
+        "10 ml"
+      ],
+      "popularity": 85
     },
     {
       "handle": "aroma-diffuser-cloud",
@@ -108,15 +279,42 @@
       "category": "aroma",
       "badge": "Neu",
       "price": 49.9,
-      "option": { "title": "Farbe", "values": ["Weiß", "Holz"] },
+      "option": {
+        "title": "Farbe",
+        "values": [
+          "Weiß",
+          "Holz"
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1602928321679-560bb453f190",
         "https://images.unsplash.com/photo-1515377905703-c4788e51af15"
       ],
       "reviews": [
-        { "name": "Anna B.", "rating": 5, "title": "So gemütlich", "text": "Das Licht ist wunderschön und er ist wirklich flüsterleise." },
-        { "name": "David K.", "rating": 4, "title": "Empfehlung", "text": "Läuft die ganze Nacht durch, Abschaltautomatik funktioniert." }
-      ]
+        {
+          "name": "Anna B.",
+          "rating": 5,
+          "title": "So gemütlich",
+          "text": "Das Licht ist wunderschön und er ist wirklich flüsterleise."
+        },
+        {
+          "name": "David K.",
+          "rating": 4,
+          "title": "Empfehlung",
+          "text": "Läuft die ganze Nacht durch, Abschaltautomatik funktioniert."
+        }
+      ],
+      "art": "diffuser",
+      "swatches": {
+        "Weiß": "#f3eee8",
+        "Holz": "#b98a5e"
+      },
+      "benefits": [
+        "Flüsterleise",
+        "7 Lichtfarben",
+        "Timer & Auto-Off"
+      ],
+      "popularity": 80
     },
     {
       "handle": "yogamatte-kork-flow",
@@ -126,16 +324,48 @@
       "category": "yoga",
       "price": 69.9,
       "compare_at_price": 84.9,
-      "option": { "title": "Farbe", "values": ["Kork Natur", "Kork Lavendel"] },
+      "option": {
+        "title": "Farbe",
+        "values": [
+          "Kork Natur",
+          "Kork Lavendel"
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f",
         "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b"
       ],
       "reviews": [
-        { "name": "Katharina E.", "rating": 5, "title": "Beste Matte ever", "text": "Kein Rutschen mehr beim Hot Yoga. Und sie sieht mega aus." },
-        { "name": "Felix R.", "rating": 5, "title": "Super Grip", "text": "Am Anfang leicht nach Kork riechend, nach zwei Tagen weg." },
-        { "name": "Lisa M.", "rating": 4, "title": "Schön", "text": "Etwas schwerer als meine alte Matte, dafür extrem stabil." }
-      ]
+        {
+          "name": "Katharina E.",
+          "rating": 5,
+          "title": "Beste Matte ever",
+          "text": "Kein Rutschen mehr beim Hot Yoga. Und sie sieht mega aus."
+        },
+        {
+          "name": "Felix R.",
+          "rating": 5,
+          "title": "Super Grip",
+          "text": "Am Anfang leicht nach Kork riechend, nach zwei Tagen weg."
+        },
+        {
+          "name": "Lisa M.",
+          "rating": 4,
+          "title": "Schön",
+          "text": "Etwas schwerer als meine alte Matte, dafür extrem stabil."
+        }
+      ],
+      "art": "yogamat",
+      "swatches": {
+        "Kork Natur": "#c99a6b",
+        "Kork Lavendel": "#b9a3e3"
+      },
+      "benefits": [
+        "Rutschfest",
+        "Antibakteriell",
+        "Mit Tragegurt"
+      ],
+      "popularity": 88
     },
     {
       "handle": "faszienrolle-recover",
@@ -144,15 +374,42 @@
       "description": "Die Faszienrolle für Beine, Rücken und Waden. Die 3D-Oberfläche imitiert die Hände eines Masseurs, der EVA-Kern ist formstabil und federleicht.",
       "category": "yoga",
       "price": 34.9,
-      "option": { "title": "Härte", "values": ["Mittel", "Hart"] },
+      "option": {
+        "title": "Härte",
+        "values": [
+          "Mittel",
+          "Hart"
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0",
         "https://images.unsplash.com/photo-1518611012118-696072aa579a"
       ],
       "reviews": [
-        { "name": "Max O.", "rating": 5, "title": "Pflicht für Läufer", "text": "Nach langen Läufen rolle ich die Waden aus, macht einen riesigen Unterschied." },
-        { "name": "Sina V.", "rating": 4, "title": "Gut", "text": "Mittel ist für Einsteiger perfekt." }
-      ]
+        {
+          "name": "Max O.",
+          "rating": 5,
+          "title": "Pflicht für Läufer",
+          "text": "Nach langen Läufen rolle ich die Waden aus, macht einen riesigen Unterschied."
+        },
+        {
+          "name": "Sina V.",
+          "rating": 4,
+          "title": "Gut",
+          "text": "Mittel ist für Einsteiger perfekt."
+        }
+      ],
+      "art": "foamroller",
+      "swatches": {
+        "Mittel": "#5ec8c0",
+        "Hart": "#ff6fae"
+      },
+      "benefits": [
+        "3D-Struktur",
+        "Formstabil",
+        "Federleicht"
+      ],
+      "popularity": 70
     },
     {
       "handle": "massageball-set-trio",
@@ -161,15 +418,40 @@
       "description": "Drei Bälle in unterschiedlichen Härten und Größen für Schultern, Nacken und Fußsohlen. Passt in jede Sporttasche und löst Triggerpunkte gezielt.",
       "category": "massage",
       "price": 19.9,
-      "option": { "title": "Set", "values": ["Trio"] },
+      "option": {
+        "title": "Set",
+        "values": [
+          "Trio"
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1600881333168-2ef49b341f30",
         "https://images.unsplash.com/photo-1540555700478-4be289fbecef"
       ],
       "reviews": [
-        { "name": "Paul S.", "rating": 5, "title": "Klein aber oho", "text": "Der Igelball unter dem Schreibtisch ist mein bester Freund." },
-        { "name": "Emma J.", "rating": 4, "title": "Praktisch", "text": "Gutes Set für den Preis." }
-      ]
+        {
+          "name": "Paul S.",
+          "rating": 5,
+          "title": "Klein aber oho",
+          "text": "Der Igelball unter dem Schreibtisch ist mein bester Freund."
+        },
+        {
+          "name": "Emma J.",
+          "rating": 4,
+          "title": "Praktisch",
+          "text": "Gutes Set für den Preis."
+        }
+      ],
+      "art": "balls",
+      "swatches": {
+        "Trio": "#ff8fb1"
+      },
+      "benefits": [
+        "3 Härtegrade",
+        "Für unterwegs",
+        "Triggerpunkte"
+      ],
+      "popularity": 66
     },
     {
       "handle": "hot-stone-set-basalt",
@@ -178,15 +460,40 @@
       "description": "Handgeschliffene Basaltsteine speichern Wärme besonders lange. Erwärmt im Wasserbad sorgen sie für tiefe Entspannung bei der Partnermassage. Inklusive Baumwollbeutel und Anleitung.",
       "category": "massage",
       "price": 44.9,
-      "option": { "title": "Set", "values": ["12 Steine"] },
+      "option": {
+        "title": "Set",
+        "values": [
+          "12 Steine"
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2",
         "https://images.unsplash.com/photo-1544161515-4ab6ce6db874"
       ],
       "reviews": [
-        { "name": "Theresa A.", "rating": 5, "title": "Wie im Day Spa", "text": "Mit dem Mandelöl zusammen einfach traumhaft." },
-        { "name": "Lukas W.", "rating": 5, "title": "Schöne Steine", "text": "Gut verarbeitet und die Anleitung ist hilfreich." }
-      ]
+        {
+          "name": "Theresa A.",
+          "rating": 5,
+          "title": "Wie im Day Spa",
+          "text": "Mit dem Mandelöl zusammen einfach traumhaft."
+        },
+        {
+          "name": "Lukas W.",
+          "rating": 5,
+          "title": "Schöne Steine",
+          "text": "Gut verarbeitet und die Anleitung ist hilfreich."
+        }
+      ],
+      "art": "stones",
+      "swatches": {
+        "12 Steine": "#3a3640"
+      },
+      "benefits": [
+        "Echter Basalt",
+        "Speichert Wärme",
+        "Mit Anleitung"
+      ],
+      "popularity": 74
     },
     {
       "handle": "massageoel-mandel-arnika",
@@ -195,15 +502,42 @@
       "description": "Seidiges Körperöl aus kaltgepresstem Mandelöl und Arnikaextrakt. Zieht schnell ein, pflegt die Haut und macht jede Massage geschmeidig. Ohne Mineralöle.",
       "category": "aroma",
       "price": 22.9,
-      "option": { "title": "Größe", "values": ["100 ml", "250 ml"] },
+      "option": {
+        "title": "Größe",
+        "values": [
+          "100 ml",
+          "250 ml"
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1556228720-195a672e8a03",
         "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108"
       ],
       "reviews": [
-        { "name": "Miriam C.", "rating": 5, "title": "Riecht so gut", "text": "Klebt nicht und die Haut ist danach super weich." },
-        { "name": "Ben L.", "rating": 4, "title": "Gutes Öl", "text": "Nach dem Sport eine Wohltat für die Beine." }
-      ]
+        {
+          "name": "Miriam C.",
+          "rating": 5,
+          "title": "Riecht so gut",
+          "text": "Klebt nicht und die Haut ist danach super weich."
+        },
+        {
+          "name": "Ben L.",
+          "rating": 4,
+          "title": "Gutes Öl",
+          "text": "Nach dem Sport eine Wohltat für die Beine."
+        }
+      ],
+      "art": "pump",
+      "swatches": {
+        "100 ml": "#f0c27b",
+        "250 ml": "#f0c27b"
+      },
+      "benefits": [
+        "Vegan",
+        "Ohne Mineralöl",
+        "Zieht schnell ein"
+      ],
+      "popularity": 77
     },
     {
       "handle": "akupressurmatte-lotus",
@@ -212,16 +546,330 @@
       "description": "Über 6.000 Akupressurpunkte aktivieren die Durchblutung und schenken dir nach wenigen Minuten ein warmes, entspanntes Körpergefühl. Bezug aus Bio-Baumwolle, Füllung aus Kokosfaser.",
       "category": "yoga",
       "price": 39.9,
-      "option": { "title": "Farbe", "values": ["Lila", "Mint"] },
+      "option": {
+        "title": "Farbe",
+        "values": [
+          "Lila",
+          "Mint"
+        ]
+      },
       "images": [
         "https://images.unsplash.com/photo-1506126613408-eca07ce68773",
         "https://images.unsplash.com/photo-1545205597-3d9d02c29597"
       ],
       "reviews": [
-        { "name": "Vanessa I.", "rating": 5, "title": "Erst autsch, dann wow", "text": "Die ersten zwei Minuten sind intensiv, danach pure Entspannung." },
-        { "name": "Oliver Z.", "rating": 4, "title": "Hilft beim Einschlafen", "text": "Liege jeden Abend 20 Minuten darauf, schlafe merklich besser." },
-        { "name": "Leonie U.", "rating": 5, "title": "Liebe sie", "text": "Farbe Mint ist wunderschön." }
-      ]
+        {
+          "name": "Vanessa I.",
+          "rating": 5,
+          "title": "Erst autsch, dann wow",
+          "text": "Die ersten zwei Minuten sind intensiv, danach pure Entspannung."
+        },
+        {
+          "name": "Oliver Z.",
+          "rating": 4,
+          "title": "Hilft beim Einschlafen",
+          "text": "Liege jeden Abend 20 Minuten darauf, schlafe merklich besser."
+        },
+        {
+          "name": "Leonie U.",
+          "rating": 5,
+          "title": "Liebe sie",
+          "text": "Farbe Mint ist wunderschön."
+        }
+      ],
+      "art": "acumat",
+      "swatches": {
+        "Lila": "#8f6fd6",
+        "Mint": "#6fd6b9"
+      },
+      "benefits": [
+        "6.000+ Druckpunkte",
+        "Bio-Baumwolle",
+        "Mit Nackenkissen"
+      ],
+      "popularity": 83
+    },
+    {
+      "handle": "kirschkernkissen-cozy",
+      "title": "Kirschkernkissen Cozy",
+      "subtitle": "Wärme für Nacken und Bauch",
+      "description": "Gefüllt mit 100 % Bio-Kirschkernen und bezogen mit weichem Waffelpiqué. Einfach in Mikrowelle oder Ofen erwärmen oder im Gefrierfach kühlen. Speichert Wärme bis zu 40 Minuten.",
+      "category": "schlaf",
+      "price": 27.9,
+      "option": {
+        "title": "Farbe",
+        "values": [
+          "Creme",
+          "Salbei"
+        ]
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1584100936595-c0654b55a2e2",
+        "https://images.unsplash.com/photo-1520206183501-b80df61043c2"
+      ],
+      "reviews": [
+        {
+          "name": "Isabel F.",
+          "rating": 5,
+          "title": "Mein Winterliebling",
+          "text": "Riecht ganz leicht nach Kirsche und hält echt lange warm."
+        },
+        {
+          "name": "Noah P.",
+          "rating": 5,
+          "title": "Super gegen Verspannung",
+          "text": "Abends auf den Nacken legen und alles wird gut."
+        },
+        {
+          "name": "Greta H.",
+          "rating": 4,
+          "title": "Schön weich",
+          "text": "Der Bezug ist abnehmbar und waschbar, top."
+        }
+      ],
+      "art": "pillow",
+      "swatches": {
+        "Creme": "#efe3cf",
+        "Salbei": "#a9c2a4"
+      },
+      "benefits": [
+        "Bio-Kirschkerne",
+        "Waschbarer Bezug",
+        "Warm & kalt"
+      ],
+      "popularity": 79,
+      "badge": "Neu"
+    },
+    {
+      "handle": "fussmassagegeraet-reflex",
+      "title": "Fußmassagegerät Reflex",
+      "subtitle": "Shiatsu, Luftdruck & Wärme",
+      "description": "Knetende Rollen, sanfter Luftdruck und Wärme verwöhnen deine Fußsohlen nach langen Tagen auf den Beinen. Drei Programme, abnehmbarer und waschbarer Bezug.",
+      "category": "massage",
+      "price": 119,
+      "compare_at_price": 149,
+      "option": {
+        "title": "Farbe",
+        "values": [
+          "Graphit",
+          "Perlweiß"
+        ]
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1519824145371-296894a0daa9",
+        "https://images.unsplash.com/photo-1544161515-4ab6ce6db874"
+      ],
+      "reviews": [
+        {
+          "name": "Petra L.",
+          "rating": 5,
+          "title": "Pure Erholung",
+          "text": "Nach der Spätschicht das Beste, was mir passieren kann."
+        },
+        {
+          "name": "Kevin A.",
+          "rating": 4,
+          "title": "Kräftig",
+          "text": "Auf Stufe 3 sehr intensiv, Stufe 1 ist für mich perfekt."
+        }
+      ],
+      "art": "footspa",
+      "swatches": {
+        "Graphit": "#4a4655",
+        "Perlweiß": "#ece8f2"
+      },
+      "benefits": [
+        "3 Programme",
+        "Luftdruck & Wärme",
+        "Waschbarer Bezug"
+      ],
+      "popularity": 81,
+      "badge": "Bestseller"
+    },
+    {
+      "handle": "badesalz-totes-meer",
+      "title": "Badesalz Totes Meer Rose",
+      "subtitle": "Mit echten Rosenblüten, 500 g",
+      "description": "Mineralreiches Salz aus dem Toten Meer mit Rosenblüten und einem Hauch Geranium. Entspannt die Muskeln und macht die Haut seidig weich. Im wiederverwendbaren Glas.",
+      "category": "aroma",
+      "price": 18.9,
+      "option": {
+        "title": "Duft",
+        "values": [
+          "Rose",
+          "Eukalyptus"
+        ]
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec",
+        "https://images.unsplash.com/photo-1515377905703-c4788e51af15"
+      ],
+      "reviews": [
+        {
+          "name": "Carla B.",
+          "rating": 5,
+          "title": "Wie im Hotel-Spa",
+          "text": "Die Rosenblüten sehen in der Wanne wunderschön aus."
+        },
+        {
+          "name": "Selina K.",
+          "rating": 5,
+          "title": "Toller Duft",
+          "text": "Dezent und nicht künstlich. Kaufe ich wieder."
+        }
+      ],
+      "art": "saltjar",
+      "swatches": {
+        "Rose": "#f4a7bb",
+        "Eukalyptus": "#9fd8c3"
+      },
+      "benefits": [
+        "Echtes Totes-Meer-Salz",
+        "Wiederverwendbares Glas",
+        "Vegan"
+      ],
+      "popularity": 69
+    },
+    {
+      "handle": "duftkerze-sandelholz",
+      "title": "Duftkerze Sandelholz & Vanille",
+      "subtitle": "Sojawachs, 45 h Brenndauer",
+      "description": "Handgegossene Kerze aus Sojawachs mit Holzdocht, der beim Brennen leise knistert. Warme Noten von Sandelholz, Vanille und einem Hauch Amber.",
+      "category": "aroma",
+      "price": 32.9,
+      "option": {
+        "title": "Größe",
+        "values": [
+          "Classic",
+          "Grande"
+        ]
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1603006905003-be475563bc59",
+        "https://images.unsplash.com/photo-1602874801006-e26c1e1b0d4c"
+      ],
+      "reviews": [
+        {
+          "name": "Moritz G.",
+          "rating": 5,
+          "title": "Das Knistern!",
+          "text": "Der Holzdocht macht die Stimmung perfekt."
+        },
+        {
+          "name": "Johanna S.",
+          "rating": 5,
+          "title": "Wunderschön",
+          "text": "Duftet den ganzen Raum aus, ohne aufdringlich zu sein."
+        },
+        {
+          "name": "Fabian E.",
+          "rating": 4,
+          "title": "Gut",
+          "text": "Etwas teuer, aber die Brenndauer stimmt."
+        }
+      ],
+      "art": "candle",
+      "swatches": {
+        "Classic": "#e9d6c0",
+        "Grande": "#e9d6c0"
+      },
+      "benefits": [
+        "Sojawachs",
+        "Knisternder Holzdocht",
+        "45 h Brenndauer"
+      ],
+      "popularity": 76
+    },
+    {
+      "handle": "schlafmaske-silk",
+      "title": "Schlafmaske Pure Silk",
+      "subtitle": "100 % Maulbeerseide",
+      "description": "Federleichte Schlafmaske aus 22 Momme Maulbeerseide. Blockiert Licht vollständig, schont Haut und Wimpern und verrutscht dank weichem Band nicht.",
+      "category": "schlaf",
+      "price": 29.9,
+      "option": {
+        "title": "Farbe",
+        "values": [
+          "Champagner",
+          "Mauve",
+          "Schwarz"
+        ]
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1631157769376-0e4ebf35c2e3",
+        "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55"
+      ],
+      "reviews": [
+        {
+          "name": "Amelie R.",
+          "rating": 5,
+          "title": "Endlich durchschlafen",
+          "text": "Absolut dunkel und so angenehm auf der Haut."
+        },
+        {
+          "name": "Lea T.",
+          "rating": 5,
+          "title": "Luxus pur",
+          "text": "Fühlt sich teurer an als sie ist."
+        }
+      ],
+      "art": "sleepmask",
+      "swatches": {
+        "Champagner": "#ead2b5",
+        "Mauve": "#c497b6",
+        "Schwarz": "#26222e"
+      },
+      "benefits": [
+        "22 Momme Seide",
+        "Hautfreundlich",
+        "Verrutscht nicht"
+      ],
+      "popularity": 73,
+      "badge": "Trend"
+    },
+    {
+      "handle": "meditationskissen-zafu",
+      "title": "Meditationskissen Zafu",
+      "subtitle": "Buchweizenfüllung, Bio-Baumwolle",
+      "description": "Das klassische runde Meditationskissen passt sich dank Buchweizenschalen perfekt an. Für eine aufrechte, entspannte Haltung bei Meditation und Atemübungen.",
+      "category": "yoga",
+      "price": 44.9,
+      "option": {
+        "title": "Farbe",
+        "values": [
+          "Terracotta",
+          "Nachtblau"
+        ]
+      },
+      "images": [
+        "https://images.unsplash.com/photo-1593811167562-9cef47bfc4d7",
+        "https://images.unsplash.com/photo-1506126613408-eca07ce68773"
+      ],
+      "reviews": [
+        {
+          "name": "Tobias N.",
+          "rating": 5,
+          "title": "Perfekte Höhe",
+          "text": "Endlich schlafen mir beim Meditieren die Beine nicht mehr ein."
+        },
+        {
+          "name": "Ronja M.",
+          "rating": 4,
+          "title": "Sehr schön",
+          "text": "Die Farbe Terracotta ist ein Traum."
+        }
+      ],
+      "art": "zafu",
+      "swatches": {
+        "Terracotta": "#d9785a",
+        "Nachtblau": "#34416e"
+      },
+      "benefits": [
+        "Buchweizenfüllung",
+        "Bio-Baumwolle",
+        "Abnehmbarer Bezug"
+      ],
+      "popularity": 64
     }
   ]
 }
