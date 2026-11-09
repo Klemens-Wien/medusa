@@ -17,6 +17,14 @@ Ein Onlineshop für Wellness- und Massageprodukte, der zuerst für das Handy ges
 - Kategorie-Filter, Bestseller-Spotlight, Laufband, Newsletter-Box und eine feste Kaufen-Leiste auf dem Handy.
 - Performance: Seiten werden statisch erzeugt und alle 10 Minuten aktualisiert (ISR). Bilder laufen über `next/image` (AVIF/WebP, passende Größen). Es gibt kein CSS-Framework und nur wenige Client-Komponenten.
 
+## Vorschau als einzelne HTML-Datei
+
+`preview/vermont-shop.html` ist der Shop als eine einzige Datei. Sie lässt sich ohne Server direkt im Browser öffnen, mit Demo-Daten und einem Warenkorb im Browser. Nach Änderungen an `data/products.json` oder am Design neu erzeugen:
+
+```bash
+node preview/build-preview.mjs
+```
+
 ## Schnellstart nur mit der Storefront (Demo-Daten)
 
 ```bash

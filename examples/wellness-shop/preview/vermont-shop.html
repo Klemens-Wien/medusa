@@ -1,0 +1,1926 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0c0913">
+<title>Vermont | Wellness & Massage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400..800&display=swap" rel="stylesheet">
+<script>document.documentElement.classList.add('js')</script>
+<style>
+:root {
+  --bg: #0c0913;
+  --bg-2: #15101f;
+  --surface: rgba(255, 255, 255, 0.06);
+  --surface-strong: rgba(255, 255, 255, 0.1);
+  --border: rgba(255, 255, 255, 0.12);
+  --text: #f7f3ff;
+  --muted: rgba(247, 243, 255, 0.64);
+  --neon: #d6ff3f;
+  --neon-ink: #121405;
+  --pink: #ff5fd2;
+  --violet: #9d7bff;
+  --peach: #ffb38a;
+  --mint: #6ff2cf;
+  --star: #ffd25e;
+  --radius: 22px;
+  --radius-sm: 14px;
+  --gutter: 16px;
+  --header-h: 60px;
+  --font: "Plus Jakarta Sans Variable", "Plus Jakarta Sans", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, sans-serif;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Soft gradient mesh behind everything. Static, so it costs nothing while scrolling. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: -20vh -20vw;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(40vmax 40vmax at 10% 10%, rgba(157, 123, 255, 0.28), transparent 60%),
+    radial-gradient(36vmax 36vmax at 90% 25%, rgba(255, 95, 210, 0.2), transparent 60%),
+    radial-gradient(40vmax 40vmax at 50% 95%, rgba(111, 242, 207, 0.14), transparent 60%),
+    radial-gradient(30vmax 30vmax at 85% 80%, rgba(255, 179, 138, 0.14), transparent 60%);
+}
+
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--neon);
+  outline-offset: 3px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+p {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--gutter);
+}
+
+.section {
+  padding: 56px 0;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--neon);
+}
+
+.section-title {
+  font-size: clamp(30px, 8vw, 52px);
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.gradient-text {
+  background: linear-gradient(100deg, var(--peach), var(--pink) 45%, var(--violet));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ---------- Glass ---------- */
+.glass {
+  background: rgba(22, 16, 34, 0.55);
+  border: 1px solid var(--border);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+  backdrop-filter: blur(18px) saturate(160%);
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
+  padding: 0 26px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 700;
+  font-size: 16px;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease),
+    background 0.25s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-neon {
+  background: var(--neon);
+  color: var(--neon-ink);
+  box-shadow: 0 0 0 0 rgba(214, 255, 63, 0.5), 0 10px 40px -10px rgba(214, 255, 63, 0.7);
+}
+
+.btn-neon:hover {
+  box-shadow: 0 0 0 4px rgba(214, 255, 63, 0.18), 0 14px 50px -10px rgba(214, 255, 63, 0.9);
+}
+
+.btn-glass {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.24);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.icon-btn {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ---------- Header ---------- */
+.header {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  z-index: 40;
+  height: var(--header-h);
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px 0 20px;
+  max-width: 1180px;
+  margin: 0 auto;
+  transition: background 0.3s;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.05em;
+}
+
+.logo span {
+  color: var(--neon);
+  text-shadow: 0 0 18px rgba(214, 255, 63, 0.8);
+}
+
+.header-nav {
+  display: none;
+  gap: 26px;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.header-nav a:hover {
+  color: var(--text);
+}
+
+.cart-btn {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 999px;
+  background: var(--pink);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 14px rgba(255, 95, 210, 0.9);
+}
+
+.cart-count.bump {
+  animation: bump 0.45s var(--ease);
+}
+
+@keyframes bump {
+  40% {
+    transform: scale(1.45);
+  }
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  min-height: 92svh;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  border-radius: 0 0 36px 36px;
+  isolation: isolate;
+}
+
+.hero-media,
+.hero-media > img,
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero-video {
+  opacity: 0;
+  transition: opacity 1s var(--ease);
+}
+
+.hero-video.is-playing {
+  opacity: 1;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(12, 9, 19, 0.2) 0%, rgba(12, 9, 19, 0) 30%, rgba(12, 9, 19, 0.75) 72%, var(--bg) 100%),
+    linear-gradient(120deg, rgba(157, 123, 255, 0.35), rgba(255, 95, 210, 0.15) 50%, transparent);
+}
+
+.hero-content {
+  padding-bottom: 44px;
+  padding-top: 120px;
+}
+
+.hero-title {
+  font-size: clamp(44px, 13vw, 96px);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 0.95;
+  margin: 14px 0 16px;
+}
+
+.hero-sub {
+  font-size: 17px;
+  color: rgba(247, 243, 255, 0.82);
+  max-width: 440px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.hero-proof {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.dot-live {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--neon);
+  box-shadow: 0 0 10px var(--neon);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+/* ---------- Marquee ---------- */
+.marquee {
+  overflow: hidden;
+  border-block: 1px solid var(--border);
+  background: linear-gradient(90deg, rgba(157, 123, 255, 0.12), rgba(255, 95, 210, 0.12));
+  padding: 14px 0;
+  margin-top: 28px;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  gap: 40px;
+  animation: marquee 28s linear infinite;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.marquee-track span::after {
+  content: "\2726";
+  margin-left: 40px;
+  color: var(--neon);
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------- Chips ---------- */
+.chips {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin: 22px calc(var(--gutter) * -1) 22px;
+  padding: 2px var(--gutter);
+  scroll-snap-type: x proximity;
+}
+
+.chips::-webkit-scrollbar {
+  display: none;
+}
+
+.chip {
+  flex: none;
+  scroll-snap-align: start;
+  min-height: 42px;
+  padding: 0 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.25s var(--ease);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.chip[aria-pressed="true"],
+.chip[aria-checked="true"] {
+  background: var(--text);
+  color: var(--bg);
+  border-color: var(--text);
+}
+
+/* ---------- Product grid ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  overflow: hidden;
+  transition: transform 0.4s var(--ease), border-color 0.3s, box-shadow 0.4s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+@media (hover: hover) {
+  .card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 95, 210, 0.5);
+    box-shadow: 0 20px 50px -20px rgba(255, 95, 210, 0.55);
+  }
+  .card:hover .card-media img {
+    transform: scale(1.06);
+  }
+}
+
+.card-media {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: linear-gradient(135deg, #2a1f43, #3b1d3a);
+}
+
+.card-media img {
+  object-fit: cover;
+  transition: transform 0.8s var(--ease);
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+  padding: 5px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: rgba(12, 9, 19, 0.55);
+  border: 1px solid rgba(214, 255, 63, 0.55);
+  color: var(--neon);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 12px 14px;
+  flex: 1;
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.card-rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 4px;
+}
+
+.price {
+  font-weight: 800;
+  font-size: 17px;
+}
+
+.price-old {
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.price-save {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--pink);
+}
+
+/* ---------- Image fallback ---------- */
+.img-fallback {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(255, 179, 138, 0.6), transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(157, 123, 255, 0.7), transparent 55%),
+    linear-gradient(135deg, #3b2160, #61224f);
+}
+
+/* ---------- Stars ---------- */
+.stars {
+  position: relative;
+  display: inline-block;
+  line-height: 0;
+  flex: none;
+}
+
+.stars-fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: var(--star);
+  filter: drop-shadow(0 0 4px rgba(255, 210, 94, 0.6));
+}
+
+.stars-base {
+  color: rgba(255, 255, 255, 0.18);
+  white-space: nowrap;
+}
+
+.stars svg {
+  display: inline-block;
+}
+
+/* ---------- Spotlight ---------- */
+.spotlight {
+  position: relative;
+  display: grid;
+  gap: 20px;
+  border-radius: 30px;
+  padding: 18px;
+  overflow: hidden;
+}
+
+.spotlight::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  right: -80px;
+  top: -80px;
+  border-radius: 50%;
+  background: var(--pink);
+  filter: blur(90px);
+  opacity: 0.45;
+  z-index: -1;
+}
+
+.spotlight-media {
+  position: relative;
+  aspect-ratio: 1;
+  border-radius: 22px;
+  overflow: hidden;
+  background: #241a38;
+}
+
+.spotlight-media img {
+  object-fit: cover;
+}
+
+.spotlight h3 {
+  font-size: clamp(28px, 7vw, 44px);
+  font-weight: 800;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 22px;
+  display: grid;
+  gap: 10px;
+}
+
+.feature-list li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: rgba(247, 243, 255, 0.85);
+}
+
+.feature-list li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--neon);
+  box-shadow: 0 0 10px var(--neon);
+  flex: none;
+}
+
+/* ---------- Reviews ---------- */
+.reviews-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.rating-big {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rating-big strong {
+  font-size: 44px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.review-rail {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  margin: 24px calc(var(--gutter) * -1) 0;
+  padding: 4px var(--gutter) 8px;
+}
+
+.review-rail::-webkit-scrollbar {
+  display: none;
+}
+
+.review-card {
+  flex: 0 0 82%;
+  max-width: 340px;
+  scroll-snap-align: center;
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.review-card h4 {
+  margin: 0;
+  font-size: 17px;
+  letter-spacing: -0.01em;
+}
+
+.review-card p {
+  color: rgba(247, 243, 255, 0.8);
+  font-size: 15px;
+}
+
+.review-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 8px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 13px;
+  color: var(--neon-ink);
+  background: linear-gradient(135deg, var(--neon), var(--mint));
+  flex: none;
+}
+
+.verified {
+  color: var(--mint);
+  font-weight: 700;
+}
+
+.rating-bars {
+  display: grid;
+  gap: 6px;
+  margin: 18px 0 8px;
+  font-size: 13px;
+}
+
+.rating-bar {
+  display: grid;
+  grid-template-columns: 34px 1fr 26px;
+  align-items: center;
+  gap: 10px;
+  color: var(--muted);
+}
+
+.rating-bar-track {
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.rating-bar-track span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--star), var(--peach));
+}
+
+.review-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.review-list .review-card {
+  max-width: none;
+}
+
+/* ---------- USPs ---------- */
+.usp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.usp {
+  padding: 18px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.usp-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 12px;
+  background: linear-gradient(135deg, rgba(157, 123, 255, 0.4), rgba(255, 95, 210, 0.35));
+  color: var(--text);
+}
+
+.usp h3 {
+  font-size: 16px;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+}
+
+.usp p {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+/* ---------- Newsletter ---------- */
+.newsletter {
+  position: relative;
+  padding: 30px 20px;
+  border-radius: 30px;
+  overflow: hidden;
+  text-align: center;
+  background:
+    radial-gradient(circle at 0% 0%, rgba(255, 95, 210, 0.55), transparent 55%),
+    radial-gradient(circle at 100% 100%, rgba(157, 123, 255, 0.6), transparent 55%),
+    #1a1228;
+  border: 1px solid var(--border);
+}
+
+.newsletter h2 {
+  font-size: clamp(28px, 8vw, 44px);
+  font-weight: 800;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px;
+  padding: 6px;
+  border-radius: 999px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 16px;
+  padding: 0 14px;
+  outline: none;
+}
+
+.newsletter-form .btn {
+  min-height: 46px;
+  padding: 0 20px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  padding: 40px 0 120px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.footer-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 24px;
+}
+
+.footer h4 {
+  color: var(--text);
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 6px;
+}
+
+/* ---------- Cart drawer ---------- */
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: rgba(5, 3, 10, 0.55);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s var(--ease);
+}
+
+.drawer-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 61;
+  width: min(420px, 92vw);
+  display: flex;
+  flex-direction: column;
+  border-radius: 28px 0 0 28px;
+  border-right: 0;
+  background: rgba(20, 14, 32, 0.82);
+  transform: translateX(105%);
+  transition: transform 0.5s var(--ease);
+  visibility: hidden;
+}
+
+.drawer.open {
+  transform: none;
+  visibility: visible;
+}
+
+.drawer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 18px 14px 22px;
+}
+
+.drawer-head h2 {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.shipping-progress {
+  margin: 0 22px 10px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.progress-track {
+  height: 6px;
+  margin-top: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.progress-track span {
+  display: block;
+  height: 100%;
+  background: linear-gradient(90deg, var(--mint), var(--neon));
+  box-shadow: 0 0 12px var(--neon);
+  transition: width 0.6s var(--ease);
+}
+
+.drawer-items {
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 6px 18px;
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.line-item {
+  display: grid;
+  grid-template-columns: 76px 1fr;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  animation: slide-in 0.45s var(--ease);
+}
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+}
+
+.line-item-media {
+  position: relative;
+  width: 76px;
+  height: 92px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #2a1f43;
+}
+
+.line-item-media img {
+  object-fit: cover;
+}
+
+.line-item-title {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.25;
+}
+
+.line-item-variant {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.line-item-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.qty {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+}
+
+.qty button {
+  width: 34px;
+  height: 34px;
+  border: 0;
+  background: none;
+  font-size: 18px;
+}
+
+.qty span {
+  min-width: 22px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.drawer-empty {
+  text-align: center;
+  padding: 50px 10px;
+  color: var(--muted);
+  display: grid;
+  gap: 18px;
+  justify-items: center;
+}
+
+.drawer-foot {
+  padding: 16px 18px calc(16px + env(safe-area-inset-bottom));
+  border-top: 1px solid var(--border);
+  display: grid;
+  gap: 12px;
+}
+
+.drawer-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.drawer-note {
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* ---------- Product page ---------- */
+.pdp {
+  padding-top: calc(var(--header-h) + 22px);
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.pdp-layout {
+  display: grid;
+  gap: 24px;
+}
+
+.gallery {
+  position: relative;
+  margin: 0 calc(var(--gutter) * -1);
+}
+
+.gallery-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  gap: 10px;
+  padding: 0 var(--gutter);
+}
+
+.gallery-track::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-slide {
+  position: relative;
+  flex: 0 0 100%;
+  aspect-ratio: 4 / 5;
+  scroll-snap-align: center;
+  border-radius: 26px;
+  overflow: hidden;
+  background: #241a38;
+  border: 0;
+  padding: 0;
+  cursor: zoom-in;
+}
+
+.gallery-slide img {
+  object-fit: cover;
+}
+
+.gallery-hint {
+  position: absolute;
+  right: calc(var(--gutter) + 12px);
+  bottom: 34px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.gallery-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.gallery-dots button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border-radius: 999px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.25);
+  transition: width 0.3s var(--ease), background 0.3s;
+}
+
+.gallery-dots button[aria-current="true"] {
+  width: 24px;
+  background: var(--neon);
+}
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  background: rgba(5, 3, 10, 0.94);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  touch-action: none;
+  animation: fade 0.3s var(--ease);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+}
+
+.lightbox-stage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: zoom-in;
+}
+
+.lightbox-stage.zoomed {
+  cursor: grab;
+}
+
+.lightbox-stage img {
+  object-fit: contain;
+  transition: transform 0.35s var(--ease);
+  will-change: transform;
+}
+
+.lightbox-stage.dragging img {
+  transition: none;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: calc(14px + env(safe-area-inset-top));
+  right: 14px;
+  z-index: 2;
+}
+
+.lightbox-tip {
+  position: absolute;
+  bottom: calc(22px + env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.pdp-title {
+  font-size: clamp(32px, 9vw, 52px);
+  font-weight: 800;
+  margin: 10px 0 8px;
+}
+
+.pdp-sub {
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.pdp-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.pdp-price {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.pdp-price .price {
+  font-size: 30px;
+}
+
+.option-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+
+.option-values {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.pdp-desc {
+  color: rgba(247, 243, 255, 0.85);
+  font-size: 16px;
+  margin: 22px 0;
+}
+
+.details {
+  border-top: 1px solid var(--border);
+}
+
+.details details {
+  border-bottom: 1px solid var(--border);
+  padding: 4px 0;
+}
+
+.details summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.details summary::-webkit-details-marker {
+  display: none;
+}
+
+.details summary::after {
+  content: "+";
+  font-size: 22px;
+  color: var(--neon);
+  transition: transform 0.3s var(--ease);
+}
+
+.details details[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.details details p {
+  padding-bottom: 14px;
+  color: var(--muted);
+}
+
+.sticky-buy {
+  position: fixed;
+  left: 10px;
+  right: 10px;
+  bottom: calc(10px + env(safe-area-inset-bottom));
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 8px 8px 18px;
+  border-radius: 999px;
+}
+
+.sticky-buy .btn {
+  flex: 1;
+  min-height: 48px;
+}
+
+.sticky-buy-price {
+  font-weight: 800;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+/* ---------- Toast ---------- */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(86px + env(safe-area-inset-bottom));
+  z-index: 90;
+  transform: translate(-50%, 20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.35s var(--ease);
+  max-width: calc(100vw - 32px);
+  text-align: center;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+/* ---------- Scroll reveal ---------- */
+.js [data-reveal] {
+  opacity: 0;
+  transform: translateY(28px) scale(0.98);
+  transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+  transition-delay: var(--delay, 0ms);
+}
+
+.js [data-reveal].is-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* ---------- Larger screens ---------- */
+@media (min-width: 640px) {
+  :root {
+    --gutter: 24px;
+  }
+  .review-card {
+    flex-basis: 46%;
+  }
+  .usp-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .footer-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 900px) {
+  .header-nav {
+    display: flex;
+  }
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+  }
+  .spotlight {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 28px;
+    gap: 40px;
+  }
+  .pdp-layout {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  .gallery {
+    margin: 0;
+  }
+  .gallery-track {
+    padding: 0;
+  }
+  .pdp-info {
+    position: sticky;
+    top: calc(var(--header-h) + 30px);
+  }
+  .sticky-buy {
+    display: none;
+  }
+  .review-card {
+    flex-basis: 31%;
+  }
+  .review-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .newsletter {
+    padding: 56px;
+  }
+  .newsletter-form {
+    max-width: 480px;
+    margin: 24px auto 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .js [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.grid > * {
+  display: flex;
+}
+
+.grid > * > .card {
+  flex: 1;
+}
+
+.btn:disabled {
+  opacity: 0.7;
+}
+
+.img-wrap { position: relative; }
+.img-wrap > img { position: absolute; inset: 0; width: 100%; height: 100%; }
+.cart-count[hidden] { display: none; }
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script id="data" type="application/json">{"categories":[{"handle":"massage","name":"Massage"},{"handle":"gesicht","name":"Gesicht & Beauty"},{"handle":"aroma","name":"Aroma & Öle"},{"handle":"yoga","name":"Yoga & Recovery"}],"products":[{"handle":"massagepistole-pulse-pro","title":"Massagepistole Pulse Pro","subtitle":"Tiefenmassage in 6 Stufen","description":"Kraftvolle Perkussionsmassage für verspannte Muskeln nach dem Training oder einem langen Bürotag. Flüsterleiser Motor, 6 Intensitätsstufen, 5 Aufsätze und bis zu 6 Stunden Akkulaufzeit. Kommt im Travel-Case.","category":"massage","badge":"Bestseller","price":129,"compare_at_price":159,"option":{"title":"Farbe","values":["Midnight","Sand"]},"images":["https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b","https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b"],"reviews":[{"name":"Lena K.","rating":5,"title":"Gamechanger nach dem Gym","text":"Leise, stark und der Akku hält ewig. Mein Nacken dankt es mir jeden Abend."},{"name":"Jonas M.","rating":5,"title":"Besser als erwartet","text":"Die Stufen 1 bis 3 reichen völlig, Stufe 6 ist richtig intensiv. Top Verarbeitung."},{"name":"Aylin S.","rating":4,"title":"Sehr gut","text":"Würde mir noch einen weicheren Aufsatz wünschen, sonst perfekt."}]},{"handle":"nackenmassagegeraet-shiatsu","title":"Nackenmassagegerät Shiatsu Wrap","subtitle":"Mit Wärmefunktion","description":"Acht rotierende Shiatsu-Knoten und sanfte Infrarotwärme lösen Verspannungen in Nacken und Schultern. Kabellos, mit Handschlaufen für den perfekten Druck. Ideal für Homeoffice und Couch.","category":"massage","badge":"Viral","price":79.9,"compare_at_price":99.9,"option":{"title":"Farbe","values":["Grau","Rosé"]},"images":["https://images.unsplash.com/photo-1519823551278-64ac92734fb1","https://images.unsplash.com/photo-1544161515-4ab6ce6db874"],"reviews":[{"name":"Sarah W.","rating":5,"title":"Wie beim Masseur","text":"Die Wärme ist herrlich. Benutze es jeden Abend 15 Minuten auf dem Sofa."},{"name":"Tim B.","rating":4,"title":"Angenehm","text":"Sehr entspannend, die Knoten könnten etwas tiefer gehen."},{"name":"Nina R.","rating":5,"title":"Perfektes Geschenk","text":"Für meine Mama gekauft, sie will es nicht mehr hergeben."}]},{"handle":"gua-sha-stein-rosenquarz","title":"Gua-Sha-Stein Rosenquarz","subtitle":"Echter Rosenquarz, handpoliert","description":"Der Klassiker für dein Morgenritual: Der kühle Rosenquarz regt die Mikrozirkulation an, fördert den Lymphfluss und lässt die Haut frischer wirken. Perfekt in Kombination mit einem Gesichtsöl.","category":"gesicht","badge":"Trend","price":24.9,"option":{"title":"Stein","values":["Rosenquarz","Jade"]},"images":["https://images.unsplash.com/photo-1570172619644-dfd03ed5d881","https://images.unsplash.com/photo-1556228578-8c89e6adf883"],"reviews":[{"name":"Mia L.","rating":5,"title":"Wunderschön","text":"Fühlt sich hochwertig an und mein Gesicht ist morgens viel weniger geschwollen."},{"name":"Clara F.","rating":5,"title":"Liebe es","text":"Lege ihn vorher in den Kühlschrank, ein echtes Spa-Gefühl."},{"name":"Elif D.","rating":4,"title":"Toll","text":"Schöne Form, die Kanten passen super an Kiefer und Wangen."}]},{"handle":"jade-roller-duo","title":"Jade Roller Duo","subtitle":"Kühlende Gesichtsmassage","description":"Doppelseitiger Roller mit großem Stein für Wangen und Stirn und kleinem Stein für die Augenpartie. Geräuschlose Rolle aus Edelstahl, damit nichts quietscht.","category":"gesicht","price":29.9,"option":{"title":"Stein","values":["Jade"]},"images":["https://images.unsplash.com/photo-1616394584738-fc6e612e71b9","https://images.unsplash.com/photo-1620916566398-39f1143ab7be"],"reviews":[{"name":"Hannah P.","rating":5,"title":"Must-have","text":"Nach dem Serum rollen und die Haut glänzt. Liebe es."},{"name":"Sophie G.","rating":4,"title":"Schön kühl","text":"Gute Qualität, die kleine Rolle ist perfekt unter den Augen."}]},{"handle":"aromaoel-lavendel-calm","title":"Aromaöl Lavendel Calm","subtitle":"100 % ätherisches Bio-Öl","description":"Reines Lavendelöl aus der Provence für den Diffuser, ein warmes Bad oder ein paar Tropfen auf dem Kopfkissen. Beruhigt, entspannt und hilft beim Runterkommen. 10 ml mit Tropfeinsatz.","category":"aroma","price":19.9,"option":{"title":"Duft","values":["Lavendel","Eukalyptus","Orange"]},"images":["https://images.unsplash.com/photo-1608571423902-eed4a5ad8108","https://images.unsplash.com/photo-1600857062241-98e5dba7f214"],"reviews":[{"name":"Julia H.","rating":5,"title":"Riecht himmlisch","text":"Endlich ein Lavendelöl, das nicht künstlich riecht. Schlafe viel besser."},{"name":"Marco T.","rating":5,"title":"Top","text":"Eukalyptus ist mein Favorit für die Sauna. Sehr ergiebig."},{"name":"Laura N.","rating":4,"title":"Gut","text":"Schöner Duft, Flasche ist wertig."}]},{"handle":"aroma-diffuser-cloud","title":"Aroma-Diffuser Cloud","subtitle":"Ultraschall mit Moodlight","description":"Leiser Ultraschall-Diffuser mit 300 ml Tank, sieben Lichtfarben und Timer. Verteilt deine Lieblingsöle als feinen Nebel und taucht den Raum in sanftes Licht.","category":"aroma","badge":"Neu","price":49.9,"option":{"title":"Farbe","values":["Weiß","Holz"]},"images":["https://images.unsplash.com/photo-1602928321679-560bb453f190","https://images.unsplash.com/photo-1515377905703-c4788e51af15"],"reviews":[{"name":"Anna B.","rating":5,"title":"So gemütlich","text":"Das Licht ist wunderschön und er ist wirklich flüsterleise."},{"name":"David K.","rating":4,"title":"Empfehlung","text":"Läuft die ganze Nacht durch, Abschaltautomatik funktioniert."}]},{"handle":"yogamatte-kork-flow","title":"Yogamatte Kork Flow","subtitle":"Rutschfest, 4 mm, nachhaltig","description":"Natürlicher Kork auf Naturkautschuk: Je mehr du schwitzt, desto griffiger wird die Oberfläche. Antibakteriell, geruchsneutral und mit Tragegurt.","category":"yoga","price":69.9,"compare_at_price":84.9,"option":{"title":"Farbe","values":["Kork Natur","Kork Lavendel"]},"images":["https://images.unsplash.com/photo-1601925260368-ae2f83cf8b7f","https://images.unsplash.com/photo-1544367567-0f2fcb009e0b"],"reviews":[{"name":"Katharina E.","rating":5,"title":"Beste Matte ever","text":"Kein Rutschen mehr beim Hot Yoga. Und sie sieht mega aus."},{"name":"Felix R.","rating":5,"title":"Super Grip","text":"Am Anfang leicht nach Kork riechend, nach zwei Tagen weg."},{"name":"Lisa M.","rating":4,"title":"Schön","text":"Etwas schwerer als meine alte Matte, dafür extrem stabil."}]},{"handle":"faszienrolle-recover","title":"Faszienrolle Recover","subtitle":"Mittelhart mit 3D-Struktur","description":"Die Faszienrolle für Beine, Rücken und Waden. Die 3D-Oberfläche imitiert die Hände eines Masseurs, der EVA-Kern ist formstabil und federleicht.","category":"yoga","price":34.9,"option":{"title":"Härte","values":["Mittel","Hart"]},"images":["https://images.unsplash.com/photo-1599901860904-17e6ed7083a0","https://images.unsplash.com/photo-1518611012118-696072aa579a"],"reviews":[{"name":"Max O.","rating":5,"title":"Pflicht für Läufer","text":"Nach langen Läufen rolle ich die Waden aus, macht einen riesigen Unterschied."},{"name":"Sina V.","rating":4,"title":"Gut","text":"Mittel ist für Einsteiger perfekt."}]},{"handle":"massageball-set-trio","title":"Massageball-Set Trio","subtitle":"Für Triggerpunkte und Fußsohlen","description":"Drei Bälle in unterschiedlichen Härten und Größen für Schultern, Nacken und Fußsohlen. Passt in jede Sporttasche und löst Triggerpunkte gezielt.","category":"massage","price":19.9,"option":{"title":"Set","values":["Trio"]},"images":["https://images.unsplash.com/photo-1600881333168-2ef49b341f30","https://images.unsplash.com/photo-1540555700478-4be289fbecef"],"reviews":[{"name":"Paul S.","rating":5,"title":"Klein aber oho","text":"Der Igelball unter dem Schreibtisch ist mein bester Freund."},{"name":"Emma J.","rating":4,"title":"Praktisch","text":"Gutes Set für den Preis."}]},{"handle":"hot-stone-set-basalt","title":"Hot-Stone-Set Basalt","subtitle":"12 Steine für Spa-Momente zu Hause","description":"Handgeschliffene Basaltsteine speichern Wärme besonders lange. Erwärmt im Wasserbad sorgen sie für tiefe Entspannung bei der Partnermassage. Inklusive Baumwollbeutel und Anleitung.","category":"massage","price":44.9,"option":{"title":"Set","values":["12 Steine"]},"images":["https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2","https://images.unsplash.com/photo-1544161515-4ab6ce6db874"],"reviews":[{"name":"Theresa A.","rating":5,"title":"Wie im Day Spa","text":"Mit dem Mandelöl zusammen einfach traumhaft."},{"name":"Lukas W.","rating":5,"title":"Schöne Steine","text":"Gut verarbeitet und die Anleitung ist hilfreich."}]},{"handle":"massageoel-mandel-arnika","title":"Massageöl Mandel & Arnika","subtitle":"Wärmend, vegan, 100 ml","description":"Seidiges Körperöl aus kaltgepresstem Mandelöl und Arnikaextrakt. Zieht schnell ein, pflegt die Haut und macht jede Massage geschmeidig. Ohne Mineralöle.","category":"aroma","price":22.9,"option":{"title":"Größe","values":["100 ml","250 ml"]},"images":["https://images.unsplash.com/photo-1556228720-195a672e8a03","https://images.unsplash.com/photo-1608571423902-eed4a5ad8108"],"reviews":[{"name":"Miriam C.","rating":5,"title":"Riecht so gut","text":"Klebt nicht und die Haut ist danach super weich."},{"name":"Ben L.","rating":4,"title":"Gutes Öl","text":"Nach dem Sport eine Wohltat für die Beine."}]},{"handle":"akupressurmatte-lotus","title":"Akupressurmatte Lotus","subtitle":"Mit Nackenkissen","description":"Über 6.000 Akupressurpunkte aktivieren die Durchblutung und schenken dir nach wenigen Minuten ein warmes, entspanntes Körpergefühl. Bezug aus Bio-Baumwolle, Füllung aus Kokosfaser.","category":"yoga","price":39.9,"option":{"title":"Farbe","values":["Lila","Mint"]},"images":["https://images.unsplash.com/photo-1506126613408-eca07ce68773","https://images.unsplash.com/photo-1545205597-3d9d02c29597"],"reviews":[{"name":"Vanessa I.","rating":5,"title":"Erst autsch, dann wow","text":"Die ersten zwei Minuten sind intensiv, danach pure Entspannung."},{"name":"Oliver Z.","rating":4,"title":"Hilft beim Einschlafen","text":"Liege jeden Abend 20 Minuten darauf, schlafe merklich besser."},{"name":"Leonie U.","rating":5,"title":"Liebe sie","text":"Farbe Mint ist wunderschön."}]}]}</script>
+<script>
+;(function () {
+  var DATA = JSON.parse(document.getElementById("data").textContent)
+  var app = document.getElementById("app")
+  var FREE_SHIPPING = 49
+  var HERO_POSTER = "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=1400&q=70"
+  var HERO_VIDEO = "https://videos.pexels.com/video-files/6187390/6187390-hd_1080_1920_25fps.mp4"
+
+  // ---------- data ----------
+  function img(url, w) {
+    return url + "?auto=format&fit=crop&w=" + (w || 1000) + "&q=75"
+  }
+  function avg(reviews) {
+    if (!reviews.length) return 0
+    var s = 0
+    reviews.forEach(function (r) { s += r.rating })
+    return Math.round((s / reviews.length) * 10) / 10
+  }
+  var products = DATA.products.map(function (p) {
+    return Object.assign({}, p, {
+      rating: avg(p.reviews),
+      variants: p.option.values.map(function (v, i) {
+        return { id: p.handle + "-" + (i + 1), title: v, price: p.price }
+      }),
+    })
+  })
+  function byHandle(h) {
+    return products.find(function (p) { return p.handle === h })
+  }
+
+  // ---------- helpers ----------
+  var money = new Intl.NumberFormat("de-AT", { style: "currency", currency: "EUR" })
+  function eur(n) { return money.format(n) }
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
+    })
+  }
+  function comma(n) { return n.toFixed(1).replace(".", ",") }
+  var STAR = '<svg width="S" height="S" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.8l2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8z"/></svg>'
+  function stars(rating, size) {
+    size = size || 14
+    var one = STAR.replace(/S/g, size)
+    var row = one + one + one + one + one
+    var pct = Math.max(0, Math.min(100, (rating / 5) * 100))
+    return '<span class="stars" role="img" aria-label="' + comma(rating) + ' von 5 Sternen"><span class="stars-base">' + row +
+      '</span><span class="stars-fill" style="width:' + pct + '%">' + row + "</span></span>"
+  }
+  function image(src, alt, label, eager) {
+    return '<img src="' + esc(src) + '" alt="' + esc(alt) + '" data-fallback="' + esc(label || "") + '"' +
+      (eager ? ' fetchpriority="high"' : ' loading="lazy"') + ' decoding="async" style="object-fit:cover">'
+  }
+  var ICON = {
+    bag: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>',
+    close: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>',
+    arrow: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
+    back: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>',
+    zoom: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5M11 8.5v5M8.5 11h5"/></svg>',
+    truck: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg>',
+    ret: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h11a5 5 0 0 1 0 10H9"/><path d="M8 6l-4 4 4 4"/></svg>',
+    leaf: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14z"/><path d="M5 19l7-7"/></svg>',
+    shield: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>',
+  }
+
+  // Swap broken images for a gradient with the product name
+  document.addEventListener("error", function (e) {
+    var el = e.target
+    if (el.tagName !== "IMG" || el.dataset.failed) return
+    el.dataset.failed = "1"
+    var div = document.createElement("div")
+    div.className = "img-fallback"
+    div.textContent = el.dataset.fallback || ""
+    el.replaceWith(div)
+  }, true)
+
+  // ---------- cart ----------
+  var cart = load()
+  function load() {
+    try { return JSON.parse(localStorage.getItem("vermont-cart")) || [] } catch (e) { return [] }
+  }
+  function save() {
+    try { localStorage.setItem("vermont-cart", JSON.stringify(cart)) } catch (e) {}
+  }
+  function addToCart(p, variant) {
+    var line = cart.find(function (l) { return l.id === variant.id })
+    if (line) line.quantity++
+    else cart.push({ id: variant.id, handle: p.handle, title: p.title, variant: p.variants.length > 1 ? variant.title : "", thumb: img(p.images[0], 300), price: variant.price, quantity: 1 })
+    save()
+    renderCart(true)
+    openCart()
+  }
+  function setQty(id, q) {
+    cart = q <= 0 ? cart.filter(function (l) { return l.id !== id }) : cart.map(function (l) { return l.id === id ? Object.assign(l, { quantity: q }) : l })
+    save()
+    renderCart(false)
+  }
+
+  // ---------- shell ----------
+  app.innerHTML =
+    '<header class="header glass"><a href="#/" class="logo" aria-label="Vermont Startseite">Vermont<span>.</span></a>' +
+    '<nav class="header-nav"><a href="#/" data-scroll="shop">Shop</a><a href="#/" data-scroll="bestseller">Bestseller</a><a href="#/" data-scroll="reviews">Bewertungen</a></nav>' +
+    '<button class="icon-btn cart-btn" id="cart-btn" aria-label="Warenkorb öffnen">' + ICON.bag + '<span class="cart-count" id="cart-count" hidden></span></button></header>' +
+    '<main id="view"></main>' +
+    '<div class="drawer-backdrop" id="backdrop"></div>' +
+    '<aside class="drawer glass" id="drawer" role="dialog" aria-modal="true" aria-label="Warenkorb"></aside>'
+
+  var view = document.getElementById("view")
+  var drawer = document.getElementById("drawer")
+  var backdrop = document.getElementById("backdrop")
+  document.getElementById("cart-btn").onclick = openCart
+  backdrop.onclick = closeCart
+
+  function openCart() {
+    drawer.classList.add("open")
+    backdrop.classList.add("open")
+    document.body.style.overflow = "hidden"
+  }
+  function closeCart() {
+    drawer.classList.remove("open")
+    backdrop.classList.remove("open")
+    document.body.style.overflow = ""
+  }
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") closeCart() })
+
+  function renderCart(bump) {
+    var count = 0, sub = 0
+    cart.forEach(function (l) { count += l.quantity; sub += l.quantity * l.price })
+    var badge = document.getElementById("cart-count")
+    badge.hidden = !count
+    badge.textContent = count
+    if (bump) { badge.classList.remove("bump"); void badge.offsetWidth; badge.classList.add("bump") }
+
+    var missing = Math.max(0, FREE_SHIPPING - sub)
+    var html = '<div class="drawer-head"><h2>Warenkorb</h2><button class="icon-btn" data-close aria-label="Schließen">' + ICON.close + "</button></div>"
+    if (!cart.length) {
+      html += '<div class="drawer-items"><div class="drawer-empty">' + ICON.bag.replace(/20/g, "42") + '<p>Dein Warenkorb ist noch leer.</p><button class="btn btn-glass" data-close data-go-shop>Produkte entdecken</button></div></div>'
+    } else {
+      html += '<div class="shipping-progress">' + (missing > 0 ? "Noch <strong>" + eur(missing) + "</strong> bis zum Gratisversand" : '<strong style="color:var(--neon)">Du bekommst Gratisversand!</strong>') +
+        '<div class="progress-track"><span style="width:' + Math.min(100, (sub / FREE_SHIPPING) * 100) + '%"></span></div></div><div class="drawer-items">'
+      cart.forEach(function (l) {
+        html += '<div class="line-item"><a href="#/p/' + l.handle + '" class="line-item-media img-wrap" data-close>' + image(l.thumb, l.title, "") + "</a><div>" +
+          '<div class="line-item-title">' + esc(l.title) + "</div>" + (l.variant ? '<div class="line-item-variant">' + esc(l.variant) + "</div>" : "") +
+          '<div class="line-item-foot"><div class="qty"><button data-qty="' + l.id + '" data-d="-1" aria-label="Weniger">−</button><span>' + l.quantity +
+          '</span><button data-qty="' + l.id + '" data-d="1" aria-label="Mehr">+</button></div><strong>' + eur(l.price * l.quantity) + "</strong></div></div></div>"
+      })
+      html += '</div><div class="drawer-foot"><div class="drawer-total"><span>Zwischensumme</span><span>' + eur(sub) + '</span></div>' +
+        '<button class="btn btn-neon btn-block" id="checkout">Zur Kasse</button><p class="drawer-note" id="checkout-note">Inkl. MwSt., zzgl. Versand. 30 Tage Rückgaberecht.</p></div>'
+    }
+    drawer.innerHTML = html
+  }
+
+  drawer.addEventListener("click", function (e) {
+    var t = e.target.closest("button, a")
+    if (!t) return
+    if (t.dataset.qty) {
+      var l = cart.find(function (x) { return x.id === t.dataset.qty })
+      setQty(l.id, l.quantity + Number(t.dataset.d))
+    } else if (t.id === "checkout") {
+      document.getElementById("checkout-note").textContent = "Vorschau: Der Checkout wird im nächsten Schritt angebunden."
+    } else if (t.hasAttribute("data-close")) {
+      closeCart()
+      if (t.hasAttribute("data-go-shop")) go("#/", "shop")
+    }
+  })
+
+  // ---------- scroll reveal ----------
+  var io = "IntersectionObserver" in window ? new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) { en.target.classList.add("is-in"); io.unobserve(en.target) }
+    })
+  }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 }) : null
+  function observe() {
+    view.querySelectorAll("[data-reveal]").forEach(function (el) {
+      if (io) io.observe(el); else el.classList.add("is-in")
+    })
+  }
+
+  // ---------- views ----------
+  function card(p, i) {
+    var save = p.compare_at_price ? Math.round((1 - p.price / p.compare_at_price) * 100) : 0
+    return '<div data-reveal style="--delay:' + (i % 2) * 90 + 'ms"><a href="#/p/' + p.handle + '" class="card"><div class="card-media img-wrap">' +
+      (p.badge ? '<span class="badge">' + esc(p.badge) + "</span>" : "") + image(img(p.images[0], 700), p.title, p.title, i < 2) +
+      '</div><div class="card-body"><h3 class="card-title">' + esc(p.title) + '</h3><div class="card-rating">' + stars(p.rating, 12) + "<span>(" + p.reviews.length + ")</span></div>" +
+      '<div class="price-row"><span class="price">' + eur(p.price) + "</span>" +
+      (save > 0 ? '<span class="price-old">' + eur(p.compare_at_price) + '</span><span class="price-save">-' + save + "%</span>" : "") + "</div></div></a></div>"
+  }
+  function reviewCard(r, product) {
+    var initials = r.name.split(/\s+/).map(function (x) { return x[0] }).join("").slice(0, 2).toUpperCase()
+    return '<article class="review-card">' + stars(r.rating, 16) + "<h4>" + esc(r.title) + "</h4><p>" + esc(r.text) + '</p><div class="review-meta"><span class="avatar">' + initials +
+      '</span><span><strong style="color:var(--text)">' + esc(r.name) + "</strong><br>" + (product ? "zu " + esc(product) : '<span class="verified">Verifizierter Kauf</span>') + "</span></div></article>"
+  }
+
+  var activeCat = "all"
+  function home(scrollTo) {
+    var all = []
+    products.forEach(function (p) { p.reviews.forEach(function (r) { all.push({ r: r, p: p.title }) }) })
+    var overall = avg(all.map(function (x) { return x.r }))
+    var spot = products.find(function (p) { return p.badge === "Bestseller" }) || products[0]
+    var ticker = ["Gratisversand ab 49 €", "30 Tage Rückgabe", "Klimaneutraler Versand", "Über 2.300 glückliche Kund:innen"]
+    var usps = [[ICON.truck, "Express-Versand", "In 2-4 Tagen bei dir, ab 49 € gratis."], [ICON.ret, "30 Tage testen", "Nicht verliebt? Einfach zurückschicken."],
+      [ICON.leaf, "Nachhaltig", "Plastikfreie Verpackung, faire Partner."], [ICON.shield, "2 Jahre Garantie", "Auf alle Geräte, ohne Wenn und Aber."]]
+
+    view.innerHTML =
+      '<section class="hero"><div class="hero-media img-wrap">' + image(HERO_POSTER, "", "", true) + "</div>" +
+      '<div class="container hero-content"><span class="pill glass"><span class="dot-live"></span> Neue Drops jeden Freitag</span>' +
+      '<h1 class="hero-title">Dein Körper verdient ein <span class="gradient-text">Upgrade.</span></h1>' +
+      '<p class="hero-sub">Massage, Recovery und Selfcare-Rituale, die sich wie ein Spa-Tag anfühlen. Jeden Tag, zu Hause.</p>' +
+      '<div class="hero-actions"><button class="btn btn-neon" data-scroll="shop">Jetzt entdecken ' + ICON.arrow + '</button><button class="btn btn-glass" data-scroll="reviews">Bewertungen</button></div>' +
+      '<div class="hero-proof">' + stars(overall) + '<span><strong style="color:var(--text)">' + comma(overall) + "/5</strong> aus über 2.300 Bewertungen</span></div></div></section>" +
+      '<div class="marquee" aria-hidden="true"><div class="marquee-track">' + ticker.concat(ticker).map(function (t) { return "<span>" + t + "</span>" }).join("") + "</div></div>" +
+      '<section class="section" id="shop"><div class="container"><div data-reveal><span class="eyebrow">Shop</span><h2 class="section-title">Feel-good <span class="gradient-text">Essentials</span></h2></div>' +
+      '<div class="chips" role="toolbar" aria-label="Kategorien">' + [{ handle: "all", name: "Alle" }].concat(DATA.categories).map(function (c) {
+        return '<button class="chip" data-cat="' + c.handle + '" aria-pressed="' + (activeCat === c.handle) + '">' + esc(c.name) + "</button>"
+      }).join("") + '</div><div class="grid" id="grid"></div></div></section>' +
+      '<section class="section" id="bestseller"><div class="container"><div class="spotlight glass" data-reveal><div class="spotlight-media img-wrap">' + image(img(spot.images[0], 900), spot.title, spot.title) +
+      '</div><div><span class="eyebrow">Bestseller #1</span><h3 style="margin-top:10px">' + esc(spot.title) + '</h3><p class="muted" style="margin-top:10px">' + esc(spot.description) +
+      '</p><ul class="feature-list"><li>Flüsterleise unter 45 dB</li><li>6 Stufen und 5 Aufsätze</li><li>Bis zu 6 Stunden Akku</li></ul><a href="#/p/' + spot.handle + '" class="btn btn-neon">Ab ' + eur(spot.price) + " sichern " + ICON.arrow + "</a></div></div></div></section>" +
+      '<section class="section" id="reviews"><div class="container"><div class="reviews-head" data-reveal><div><span class="eyebrow">Community</span><h2 class="section-title">Echte Liebe, <span class="gradient-text">echte Reviews</span></h2></div>' +
+      '<div class="rating-big"><strong>' + comma(overall) + "</strong><div>" + stars(overall, 18) + '<div class="muted" style="font-size:13px">' + all.length + ' verifizierte Bewertungen</div></div></div></div>' +
+      '<div class="review-rail">' + all.filter(function (x) { return x.r.rating === 5 }).slice(0, 8).map(function (x) { return reviewCard(x.r, x.p) }).join("") + "</div></div></section>" +
+      '<section class="section"><div class="container"><div data-reveal><span class="eyebrow">Warum Vermont</span><h2 class="section-title">Selfcare ohne Kompromisse</h2></div><div class="usp-grid">' +
+      usps.map(function (u, i) { return '<div class="usp" data-reveal style="--delay:' + i * 80 + 'ms"><div class="usp-icon">' + u[0] + "</div><h3>" + u[1] + "</h3><p>" + u[2] + "</p></div>" }).join("") + "</div></div></section>" +
+      '<section class="section"><div class="container"><div data-reveal><div class="newsletter"><span class="eyebrow">Wellness Club</span><h2 style="margin-top:10px">10 % auf deine <span class="gradient-text">erste Bestellung</span></h2>' +
+      '<p class="muted" style="margin-top:10px">Rituale, Drops und exklusive Angebote. Kein Spam, versprochen.</p><form class="newsletter-form glass" id="nl"><label for="nl-email" class="sr-only">E-Mail-Adresse</label>' +
+      '<input id="nl-email" type="email" required placeholder="deine@email.at" autocomplete="email"><button class="btn btn-neon" type="submit">Code sichern</button></form></div></div></div></section>' +
+      footer()
+
+    renderGrid()
+    startVideo()
+    document.getElementById("nl").onsubmit = function (e) {
+      e.preventDefault()
+      this.outerHTML = '<p class="pill glass" style="margin-top:20px" role="status">Danke! Dein Code ist unterwegs.</p>'
+    }
+    observe()
+    if (scrollTo) setTimeout(function () { scrollToId(scrollTo) }, 50)
+  }
+
+  function renderGrid() {
+    var grid = document.getElementById("grid")
+    grid.innerHTML = products.filter(function (p) { return activeCat === "all" || p.category === activeCat }).map(card).join("")
+    view.querySelectorAll("[data-cat]").forEach(function (b) { b.setAttribute("aria-pressed", String(b.dataset.cat === activeCat)) })
+    observe()
+  }
+
+  function startVideo() {
+    var conn = navigator.connection
+    if ((conn && conn.saveData) || matchMedia("(prefers-reduced-motion: reduce)").matches) return
+    setTimeout(function () {
+      var media = view.querySelector(".hero-media")
+      if (!media) return
+      var v = document.createElement("video")
+      v.className = "hero-video"
+      v.muted = true; v.loop = true; v.autoplay = true; v.playsInline = true
+      v.setAttribute("playsinline", ""); v.setAttribute("aria-hidden", "true")
+      v.poster = HERO_POSTER
+      v.src = HERO_VIDEO
+      v.onplaying = function () { v.classList.add("is-playing") }
+      v.onerror = function () { v.remove() }
+      media.after(v)
+      var p = v.play(); if (p && p.catch) p.catch(function () {})
+    }, 300)
+  }
+
+  function footer() {
+    return '<footer class="footer"><div class="container"><div class="logo" style="color:var(--text)">Vermont<span>.</span></div><p style="margin-top:8px">Wellness, das man fühlt. Made with love in Wien.</p>' +
+      '<div class="footer-grid"><div><h4>Shop</h4><ul>' + DATA.categories.map(function (c) { return "<li>" + esc(c.name) + "</li>" }).join("") + "</ul></div>" +
+      "<div><h4>Hilfe</h4><ul><li>Versand</li><li>Rückgabe</li><li>Kontakt</li></ul></div><div><h4>Rechtliches</h4><ul><li>Impressum</li><li>Datenschutz</li><li>AGB</li></ul></div>" +
+      '<div><h4>Social</h4><ul><li>Instagram</li><li>TikTok</li><li>Pinterest</li></ul></div></div><p style="margin-top:30px;font-size:12px">© ' + new Date().getFullYear() + " Vermont. Alle Preise inkl. MwSt.</p></div></footer>"
+  }
+
+  function productView(p) {
+    var save = p.compare_at_price ? Math.round((1 - p.price / p.compare_at_price) * 100) : 0
+    var variant = p.variants[0]
+    var related = products.filter(function (x) { return x.handle !== p.handle })
+      .sort(function (a, b) { return (b.category === p.category) - (a.category === p.category) }).slice(0, 4)
+    var counts = [5, 4, 3, 2, 1].map(function (s) { return [s, p.reviews.filter(function (r) { return Math.round(r.rating) === s }).length] })
+
+    view.innerHTML =
+      '<div class="pdp"><div class="container"><a href="#/" class="back-link">' + ICON.back + ' Zurück zum Shop</a><div class="pdp-layout">' +
+      '<div class="gallery"><div class="gallery-track" id="track">' + p.images.map(function (src, i) {
+        return '<button class="gallery-slide img-wrap" data-zoom="' + i + '" aria-label="Bild ' + (i + 1) + ' vergrößern">' + image(img(src, 1200), p.title + ", Bild " + (i + 1), p.title, i === 0) + "</button>"
+      }).join("") + '</div><span class="gallery-hint pill glass">' + ICON.zoom + ' Tippen zum Zoomen</span><div class="gallery-dots" id="dots">' +
+      p.images.map(function (_, i) { return '<button aria-label="Bild ' + (i + 1) + '" data-dot="' + i + '" aria-current="' + (i === 0) + '"></button>' }).join("") + "</div></div>" +
+      '<div class="pdp-info">' + (p.badge ? '<span class="eyebrow">' + esc(p.badge) + "</span>" : "") + '<h1 class="pdp-title">' + esc(p.title) + "</h1>" +
+      (p.subtitle ? '<p class="pdp-sub">' + esc(p.subtitle) + "</p>" : "") +
+      '<button class="pdp-rating" data-scroll="bewertungen" style="background:none;border:0;padding:0">' + stars(p.rating, 16) + " " + comma(p.rating) + " · " + p.reviews.length + " Bewertungen</button>" +
+      '<div class="pdp-price"><span class="price">' + eur(p.price) + "</span>" + (save > 0 ? '<span class="price-old">' + eur(p.compare_at_price) + '</span><span class="price-save">Du sparst ' + save + "%</span>" : "") + "</div>" +
+      (p.variants.length > 1 ? '<div class="option-label">' + esc(p.option.title) + '</div><div class="option-values" role="radiogroup">' + p.variants.map(function (v, i) {
+        return '<button class="chip" role="radio" data-variant="' + i + '" aria-checked="' + (i === 0) + '">' + esc(v.title) + "</button>"
+      }).join("") + "</div>" : "") +
+      '<button class="btn btn-neon btn-block" data-add>' + ICON.bag + " In den Warenkorb</button>" +
+      '<p class="pdp-desc">' + esc(p.description) + "</p>" +
+      '<div class="details"><details open><summary>Versand & Lieferung</summary><p>Versand in 24 h, Lieferung in 2-4 Werktagen. Ab 49 € versandkostenfrei.</p></details>' +
+      "<details><summary>Rückgabe</summary><p>30 Tage Rückgaberecht, einfach und kostenlos.</p></details>" +
+      "<details><summary>Anwendung & Pflege</summary><p>Mit einem weichen, leicht feuchten Tuch reinigen. Nicht bei offenen Wunden anwenden.</p></details></div></div></div>" +
+      '<section class="section" id="bewertungen"><div data-reveal><span class="eyebrow">Bewertungen</span><h2 class="section-title">Das sagen unsere Kund:innen</h2></div>' +
+      '<div data-reveal><div class="rating-big" style="margin-top:18px"><strong>' + comma(p.rating) + "</strong><div>" + stars(p.rating, 18) + '<div class="muted" style="font-size:13px">' + p.reviews.length + " Bewertungen</div></div></div>" +
+      '<div class="rating-bars">' + counts.map(function (c) {
+        return '<div class="rating-bar"><span>' + c[0] + ' ★</span><div class="rating-bar-track"><span style="width:' + (c[1] / p.reviews.length) * 100 + '%"></span></div><span>' + c[1] + "</span></div>"
+      }).join("") + "</div></div>" +
+      '<div class="review-list">' + p.reviews.map(function (r, i) { return '<div data-reveal style="--delay:' + i * 70 + 'ms">' + reviewCard(r) + "</div>" }).join("") + "</div></section>" +
+      '<section class="section" style="padding-top:0;padding-bottom:120px"><div data-reveal><h2 class="section-title" style="font-size:30px">Passt perfekt dazu</h2></div>' +
+      '<div class="grid" style="margin-top:20px">' + related.map(card).join("") + "</div></section></div></div>" +
+      '<div class="sticky-buy glass"><span class="sticky-buy-price">' + eur(p.price) + '</span><button class="btn btn-neon" data-add>In den Warenkorb</button></div>'
+
+    var track = document.getElementById("track")
+    track.addEventListener("scroll", function () {
+      var i = Math.round(track.scrollLeft / track.clientWidth)
+      view.querySelectorAll("[data-dot]").forEach(function (d) { d.setAttribute("aria-current", String(Number(d.dataset.dot) === i)) })
+    }, { passive: true })
+
+    view.onclick = function (e) {
+      var t = e.target.closest("[data-add],[data-variant],[data-zoom],[data-dot]")
+      if (!t) return
+      if (t.hasAttribute("data-add")) addToCart(p, variant)
+      else if (t.dataset.variant) {
+        variant = p.variants[Number(t.dataset.variant)]
+        view.querySelectorAll("[data-variant]").forEach(function (b) { b.setAttribute("aria-checked", String(b === t)) })
+      } else if (t.dataset.dot) track.scrollTo({ left: Number(t.dataset.dot) * track.clientWidth, behavior: "smooth" })
+      else if (t.dataset.zoom) {
+        var r = t.getBoundingClientRect()
+        lightbox(img(p.images[Number(t.dataset.zoom)], 2000), p.title, (e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height)
+      }
+    }
+    observe()
+  }
+
+  // ---------- tap-to-zoom lightbox ----------
+  var ZOOM = 2.5
+  function lightbox(src, title, ox, oy) {
+    var box = document.createElement("div")
+    box.className = "lightbox"
+    box.setAttribute("role", "dialog")
+    box.setAttribute("aria-label", title + " Zoomansicht")
+    box.innerHTML = '<button class="icon-btn lightbox-close glass" aria-label="Zoom schließen">' + ICON.close + '</button><div class="lightbox-stage zoomed img-wrap">' +
+      '<img src="' + esc(src) + '" alt="' + esc(title) + '" draggable="false" data-fallback="' + esc(title) + '" style="object-fit:contain"></div>' +
+      '<span class="lightbox-tip pill glass">Ziehen zum Verschieben, tippen zum Verkleinern</span>'
+    document.body.appendChild(box)
+    document.body.style.overflow = "hidden"
+    var stage = box.querySelector(".lightbox-stage")
+    var tip = box.querySelector(".lightbox-tip")
+    var zoomed = true, off = { x: 0, y: 0 }, drag = null
+
+    function clamp(p) {
+      var mx = ((ZOOM - 1) * stage.clientWidth) / 2, my = ((ZOOM - 1) * stage.clientHeight) / 2
+      return { x: Math.max(-mx, Math.min(mx, p.x)), y: Math.max(-my, Math.min(my, p.y)) }
+    }
+    function apply() {
+      var im = stage.querySelector("img")
+      if (im) im.style.transform = "translate3d(" + off.x + "px," + off.y + "px,0) scale(" + (zoomed ? ZOOM : 1) + ")"
+      stage.classList.toggle("zoomed", zoomed)
+      tip.textContent = zoomed ? "Ziehen zum Verschieben, tippen zum Verkleinern" : "Tippen zum Zoomen"
+    }
+    function zoomAt(x, y) {
+      off = clamp({ x: (0.5 - x) * stage.clientWidth * ZOOM, y: (0.5 - y) * stage.clientHeight * ZOOM })
+    }
+    zoomAt(ox, oy)
+    apply()
+
+    function close() {
+      box.remove()
+      document.body.style.overflow = ""
+      document.removeEventListener("keydown", onKey)
+    }
+    function onKey(e) { if (e.key === "Escape") close() }
+    document.addEventListener("keydown", onKey)
+    box.querySelector(".lightbox-close").onclick = close
+
+    stage.addEventListener("pointerdown", function (e) {
+      stage.setPointerCapture(e.pointerId)
+      drag = { sx: e.clientX, sy: e.clientY, bx: off.x, by: off.y, moved: false }
+    })
+    stage.addEventListener("pointermove", function (e) {
+      if (!drag || !zoomed) return
+      var dx = e.clientX - drag.sx, dy = e.clientY - drag.sy
+      if (!drag.moved && Math.hypot(dx, dy) > 6) { drag.moved = true; stage.classList.add("dragging") }
+      if (drag.moved) { off = clamp({ x: drag.bx + dx, y: drag.by + dy }); apply() }
+    })
+    stage.addEventListener("pointerup", function (e) {
+      var d = drag
+      drag = null
+      stage.classList.remove("dragging")
+      if (!d || d.moved) return
+      if (zoomed) { zoomed = false; off = { x: 0, y: 0 } }
+      else {
+        var r = stage.getBoundingClientRect()
+        zoomed = true
+        zoomAt((e.clientX - r.left) / r.width, (e.clientY - r.top) / r.height)
+      }
+      apply()
+    })
+    stage.addEventListener("pointercancel", function () { drag = null; stage.classList.remove("dragging") })
+  }
+
+  // ---------- routing ----------
+  function scrollToId(id) {
+    var el = document.getElementById(id)
+    if (el) window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 80, behavior: "smooth" })
+  }
+  function go(hash, section) {
+    if (location.hash === hash || (hash === "#/" && !location.hash)) { if (section) scrollToId(section); return }
+    pendingScroll = section
+    location.hash = hash
+  }
+  var pendingScroll = null
+  function route() {
+    var m = location.hash.match(/^#\/p\/(.+)$/)
+    var p = m && byHandle(decodeURIComponent(m[1]))
+    closeCart()
+    if (p) { document.title = p.title + " | Vermont"; productView(p); window.scrollTo(0, 0) }
+    else {
+      document.title = "Vermont | Wellness & Massage"
+      view.onclick = null
+      home(pendingScroll)
+      if (!pendingScroll) window.scrollTo(0, 0)
+    }
+    pendingScroll = null
+  }
+
+  document.addEventListener("click", function (e) {
+    var s = e.target.closest("[data-scroll]")
+    if (s) {
+      e.preventDefault()
+      var onProduct = /^#\/p\//.test(location.hash)
+      if (s.dataset.scroll === "bewertungen" || !onProduct) scrollToId(s.dataset.scroll)
+      else go("#/", s.dataset.scroll)
+      return
+    }
+    var c = e.target.closest("[data-cat]")
+    if (c) { activeCat = c.dataset.cat; renderGrid() }
+  })
+
+  window.addEventListener("hashchange", route)
+  renderCart(false)
+  route()
+})()
+
+</script>
+</body>
+</html>
