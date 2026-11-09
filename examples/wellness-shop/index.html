@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Serena Wellness Shop</title>
+    <meta
+      name="description"
+      content="Serena – Massageöle, Aromatherapie, Massagegeräte und Rituale für mehr Ruhe im Alltag."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="nav" id="nav">
+      <a class="logo" href="#top" aria-label="Serena Startseite">
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path
+            d="M16 3c4 5 6 9 6 13a6 6 0 0 1-12 0c0-4 2-8 6-13Z"
+            fill="currentColor"
+            opacity=".85"
+          />
+          <path
+            d="M4 18c5-1 9 1 12 6-5 2-10 1-12-6Zm24 0c-5-1-9 1-12 6 5 2 10 1 12-6Z"
+            fill="currentColor"
+            opacity=".5"
+          />
+        </svg>
+        <span>Serena</span>
+      </a>
+      <nav class="nav-links" aria-label="Hauptnavigation">
+        <a href="#shop">Shop</a>
+        <a href="#rituale">Rituale</a>
+        <a href="#atmen">Atempause</a>
+        <a href="#stimmen">Stimmen</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Farbschema wechseln">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+        <button class="icon-btn cart-btn" id="cartOpen" aria-label="Warenkorb öffnen">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M5 8h14l-1.2 11.1a2 2 0 0 1-2 1.9H8.2a2 2 0 0 1-2-1.9L5 8Zm4 0V6a3 3 0 0 1 6 0v2"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <canvas id="particles" aria-hidden="true"></canvas>
+        <div class="blob blob-a" aria-hidden="true"></div>
+        <div class="blob blob-b" aria-hidden="true"></div>
+        <div class="blob blob-c" aria-hidden="true"></div>
+
+        <div class="hero-inner">
+          <p class="eyebrow reveal">Wellness &amp; Massage · Handverlesen</p>
+          <h1 class="hero-title">
+            <span class="split" data-text="Finde deine">Finde deine</span>
+            <em class="split shimmer" data-text="innere Ruhe.">innere Ruhe.</em>
+          </h1>
+          <p class="hero-lead reveal">
+            Naturreine Massageöle, wohltuende Massagegeräte und Rituale, die den
+            Alltag leiser machen. Nachhaltig hergestellt, liebevoll verpackt.
+          </p>
+          <div class="hero-cta reveal">
+            <a href="#shop" class="btn btn-primary magnetic">
+              <span>Jetzt entdecken</span>
+            </a>
+            <a href="#atmen" class="btn btn-ghost magnetic">
+              <span>1 Minute durchatmen</span>
+            </a>
+          </div>
+          <dl class="stats reveal">
+            <div>
+              <dt><span class="count" data-to="12500">0</span>+</dt>
+              <dd>entspannte Kund:innen</dd>
+            </div>
+            <div>
+              <dt><span class="count" data-to="100">0</span>%</dt>
+              <dd>natürliche Inhaltsstoffe</dd>
+            </div>
+            <div>
+              <dt><span class="count" data-to="4.9" data-decimals="1">0</span>/5</dt>
+              <dd>Durchschnittsbewertung</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orb" data-depth="0.6">
+            <div class="orb-ring"></div>
+            <div class="orb-ring r2"></div>
+            <div class="orb-core"></div>
+          </div>
+          <div class="stone s1" data-depth="1.2"></div>
+          <div class="stone s2" data-depth="0.9"></div>
+          <div class="stone s3" data-depth="1.6"></div>
+          <div class="leaf l1" data-depth="2"></div>
+          <div class="leaf l2" data-depth="1.4"></div>
+        </div>
+
+        <a href="#shop" class="scroll-hint" aria-label="Zum Shop scrollen">
+          <span></span>
+        </a>
+      </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Kostenloser Versand ab 49 €</span><i>✦</i>
+          <span>Vegan &amp; tierversuchsfrei</span><i>✦</i>
+          <span>Kaltgepresste Bio-Öle</span><i>✦</i>
+          <span>30 Tage Rückgaberecht</span><i>✦</i>
+          <span>Klimaneutraler Versand</span><i>✦</i>
+          <span>Kostenloser Versand ab 49 €</span><i>✦</i>
+          <span>Vegan &amp; tierversuchsfrei</span><i>✦</i>
+          <span>Kaltgepresste Bio-Öle</span><i>✦</i>
+          <span>30 Tage Rückgaberecht</span><i>✦</i>
+          <span>Klimaneutraler Versand</span><i>✦</i>
+        </div>
+      </div>
+
+      <section class="section" id="shop">
+        <div class="section-head reveal">
+          <p class="eyebrow">Unser Sortiment</p>
+          <h2>Für Körper, Geist &amp; Seele</h2>
+          <p class="muted" id="sourceNote">Demo-Sortiment</p>
+        </div>
+
+        <div class="toolbar reveal">
+          <div class="filters" role="tablist" aria-label="Kategorien" id="filters"></div>
+          <label class="search">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.6" />
+              <path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+            </svg>
+            <input id="search" type="search" placeholder="Produkte suchen…" aria-label="Produkte suchen" />
+          </label>
+        </div>
+
+        <div class="grid" id="productGrid" aria-live="polite"></div>
+        <p class="empty" id="emptyState" hidden>Keine Produkte gefunden. Versuch einen anderen Suchbegriff.</p>
+      </section>
+
+      <section class="section rituals" id="rituale">
+        <div class="section-head reveal">
+          <p class="eyebrow">Rituale</p>
+          <h2>Dein Weg zur Entspannung</h2>
+        </div>
+        <div class="ritual-steps">
+          <article class="ritual reveal">
+            <span class="ritual-num">01</span>
+            <h3>Ankommen</h3>
+            <p>Licht dimmen, Duftkerze entzünden, drei tiefe Atemzüge nehmen. Der Raum gehört jetzt dir.</p>
+          </article>
+          <article class="ritual reveal">
+            <span class="ritual-num">02</span>
+            <h3>Wärmen</h3>
+            <p>Massageöl zwischen den Handflächen anwärmen. Warme Hände lösen Verspannungen spürbar schneller.</p>
+          </article>
+          <article class="ritual reveal">
+            <span class="ritual-num">03</span>
+            <h3>Lösen</h3>
+            <p>Mit langen, ruhigen Streichungen arbeiten – vom Herzen weg, dann kreisend über Nacken und Schultern.</p>
+          </article>
+          <article class="ritual reveal">
+            <span class="ritual-num">04</span>
+            <h3>Nachklingen</h3>
+            <p>Mit einem warmen Kräutertee zur Ruhe kommen und das Gefühl noch ein paar Minuten halten.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section breathe" id="atmen">
+        <div class="breathe-copy reveal">
+          <p class="eyebrow">Atempause</p>
+          <h2>Eine Minute nur für dich</h2>
+          <p class="muted">
+            Folge dem Kreis: einatmen, wenn er wächst – ausatmen, wenn er kleiner
+            wird. Box-Breathing beruhigt das Nervensystem in wenigen Zügen.
+          </p>
+          <button class="btn btn-primary magnetic" id="breatheBtn">
+            <span>Atemübung starten</span>
+          </button>
+        </div>
+        <div class="breathe-visual reveal" aria-live="polite">
+          <div class="breathe-circle" id="breatheCircle">
+            <span id="breatheLabel">Bereit?</span>
+          </div>
+          <div class="breathe-ripples" aria-hidden="true"><i></i><i></i><i></i></div>
+        </div>
+      </section>
+
+      <section class="section" id="stimmen">
+        <div class="section-head reveal">
+          <p class="eyebrow">Stimmen</p>
+          <h2>Was unsere Community sagt</h2>
+        </div>
+        <div class="quotes">
+          <figure class="quote reveal tilt">
+            <blockquote>„Das Lavendel-Öl ist mein Abendritual geworden. Ich schlafe seitdem deutlich ruhiger.“</blockquote>
+            <figcaption>Beispielstimme · Lavendel-Massageöl</figcaption>
+          </figure>
+          <figure class="quote reveal tilt">
+            <blockquote>„Die Massagepistole hat nach dem Laufen echt den Unterschied gemacht.“</blockquote>
+            <figcaption>Beispielstimme · Recovery Gun Pro</figcaption>
+          </figure>
+          <figure class="quote reveal tilt">
+            <blockquote>„Wunderschön verpackt – das perfekte Geschenk für meine Schwester.“</blockquote>
+            <figcaption>Beispielstimme · Spa-Geschenkset</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section newsletter reveal">
+        <div class="newsletter-card">
+          <h2>10 % auf deine erste Bestellung</h2>
+          <p class="muted">Rituale, Tipps und exklusive Angebote – einmal im Monat, ganz ohne Stress.</p>
+          <form id="newsletter" class="newsletter-form">
+            <input type="email" required placeholder="deine@email.at" aria-label="E-Mail-Adresse" />
+            <button class="btn btn-primary" type="submit"><span>Anmelden</span></button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Serena Wellness · Demo-Storefront auf Basis von Medusa</p>
+      <p class="muted">Impressum · Datenschutz · AGB</p>
+    </footer>
+
+    <!-- Quick view -->
+    <dialog class="modal" id="quickView" aria-labelledby="qvTitle">
+      <button class="icon-btn modal-close" data-close aria-label="Schließen">✕</button>
+      <div class="modal-body">
+        <div class="modal-media" id="qvMedia"></div>
+        <div class="modal-info">
+          <p class="eyebrow" id="qvCategory"></p>
+          <h3 id="qvTitle"></h3>
+          <div class="rating" id="qvRating"></div>
+          <p class="muted" id="qvDesc"></p>
+          <div class="variants" id="qvVariants"></div>
+          <div class="modal-buy">
+            <strong class="price" id="qvPrice"></strong>
+            <button class="btn btn-primary" id="qvAdd"><span>In den Warenkorb</span></button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- Cart drawer -->
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <aside class="drawer" id="cartDrawer" aria-label="Warenkorb" aria-hidden="true">
+      <div class="drawer-head">
+        <h3>Dein Warenkorb</h3>
+        <button class="icon-btn" id="cartClose" aria-label="Warenkorb schließen">✕</button>
+      </div>
+      <div class="shipping-bar">
+        <p id="shippingText"></p>
+        <div class="bar"><span id="shippingFill"></span></div>
+      </div>
+      <ul class="cart-items" id="cartItems"></ul>
+      <div class="drawer-foot">
+        <div class="total"><span>Zwischensumme</span><strong id="cartTotal">0,00 €</strong></div>
+        <button class="btn btn-primary btn-block" id="checkoutBtn"><span>Zur Kasse</span></button>
+      </div>
+    </aside>
+
+    <div class="toast" id="toast" role="status"></div>
+
+    <script src="config.js"></script>
+    <script src="products.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
